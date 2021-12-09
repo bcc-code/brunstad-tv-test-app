@@ -1,4 +1,4 @@
-# brunstad-tv-test-app
+# brunstadtv-test-app
 Native Apple app for testing the livestream
 
 It is meant to be used with automated testing tools.
