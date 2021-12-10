@@ -13,10 +13,6 @@ blocks:
       prologue:
         commands:
           - checkout
-          - cache restore
-          - gem install bundler -v '2.1.4'
-          - bundle install --path vendor/bundle
-          - cache store
       jobs:
         - name: Test
           commands:
