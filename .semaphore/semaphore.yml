@@ -13,6 +13,8 @@ blocks:
       prologue:
         commands:
           - checkout
+          - gem install bundler -v '2.1.4'
+          - bundle install --path vendor/bundle
       jobs:
         - name: Test
           commands:
