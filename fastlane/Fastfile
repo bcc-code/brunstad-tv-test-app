@@ -20,11 +20,11 @@ end
 platform :ios do
   lane :build do
     match(type: 'adhoc')
-    gym(scheme: 'TallestTowers', clean: true)
+    gym(scheme: 'Stream Test (iOS)', clean: true)
   end
 
   lane :test do
-    run_tests(scheme: 'TallestTowers', devices: ['iPhone 11 Pro'], prelaunch_simulator: true)
+    run_tests(scheme: 'Stream Test (iOS)', devices: ['iPhone 11 Pro'], prelaunch_simulator: true)
   end
 
   lane :screenshots do

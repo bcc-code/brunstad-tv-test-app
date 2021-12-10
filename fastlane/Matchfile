@@ -9,4 +9,4 @@ git_url('ENTER THE URL FOR AN EMPTY PRIVATE GIT REPOSITORY HERE')
 username('ENTER YOUR APP STORE EMAIL/USERNAME HERE')
 
 type('adhoc')
-app_identifier('com.semaphoreci.TallestTowers')
+app_identifier('media.bcc.Stream-Test')
