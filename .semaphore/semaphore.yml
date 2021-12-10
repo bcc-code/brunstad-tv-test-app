@@ -16,5 +16,4 @@ blocks:
       jobs:
         - name: Test
           commands:
-            - bundle exec xcversion select 13.1
             - bundle exec fastlane test
