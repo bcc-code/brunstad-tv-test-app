@@ -2,7 +2,7 @@
 # https://docs.fastlane.tools/actions/gym/#gymfile
 
 project('Stream Test.xcodeproj')
-scheme('Stream Test (iOS)')
+scheme('Stream-TestTests')
 
 export_options({
   method: 'development',
