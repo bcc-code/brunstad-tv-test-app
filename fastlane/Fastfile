@@ -10,14 +10,14 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
-default_platform(:ios)
+default_platform(:tvos)
 
 before_all do
   # Install with `fastlane add_plugin semaphore`
   setup_semaphore
 end
 
-platform :ios do
+platform :tvos do
   lane :build do
     match(type: 'adhoc')
     gym(scheme: 'Stream-TestTests', clean: true)
