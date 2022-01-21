@@ -22,6 +22,6 @@ blocks:
             - bundle exec fastlane test
         - name: Build
           commands:
-            - bundle exec fastlane gym
+            - bundle exec fastlane build
       secrets:
         - name: TestAppSecrets
