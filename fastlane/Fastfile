@@ -20,7 +20,9 @@ end
 platform :tvos do
   lane :build do
     match(type: 'adhoc')
+    disable_automatic_code_signing(path: "Stream Test.xcodeproj")
     gym(scheme: 'Stream-Test', clean: true)
+    enable_automatic_code_signing(path: "Stream Test.xcodeproj")
   end
 
   lane :test do
