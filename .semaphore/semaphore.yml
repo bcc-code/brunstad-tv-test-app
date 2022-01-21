@@ -15,10 +15,7 @@ blocks:
           - checkout
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
-          - cp /secrets/Config.swift Shared/
       jobs:
         - name: Test
           commands:
             - bundle exec fastlane test
-      secrets:
-        - name: TestAppSecrets
