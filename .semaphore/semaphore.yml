@@ -19,3 +19,5 @@ blocks:
         - name: Test
           commands:
             - bundle exec fastlane test
+      secrets:
+        - name: TestAppSecrets
