@@ -15,8 +15,10 @@ blocks:
           - checkout
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
-          - xcrun simctl create "testdevice" "Apple TV 4K"  tvOS15.2
+          - cp /secrets/Config.swift Shared/
       jobs:
         - name: Test
           commands:
             - bundle exec fastlane test
+      secrets:
+        - name: TestAppSecrets
