@@ -34,7 +34,7 @@ class Stream_TestUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
             
-        waitText(app: app, id: "TimeControlValue", message: "Playing",t: 10)
+        waitText(app: app, id: "TimeControlValue", message: "Playing",t: 30)
         waitText(app: app, id: "VideoStatus", message: "1920x1080", t: 60)
         
         waitText(app: app, id: "SubLanguage", message: "Norwegian", t: 60)
