@@ -1,0 +1,1970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0020967FBD2720EDD3F7DE3EA1E1A3E8 /* RSWishListProductAddedToCartEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A15AB3C2E00D970920EB7E18FD0DF3BA /* RSWishListProductAddedToCartEvent.m */; };
+		00EB21564A0D4DCD8B3E97CA7A84E599 /* RSCouponAppliedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 348C6729C4402D2EF01B5DDBE96A1064 /* RSCouponAppliedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0233DA4E0549769DCEF6C6D10D265A65 /* RSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F5ADC8A4FD5F198E485BB4FC50FD6 /* RSConfig.m */; };
+		03808B3A989044FCFA8F0181726A7BDD /* RSConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A416104FFB4A3AB54EE3DC14073A96F6 /* RSConfigBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04D6D3A8EC8A1ADDFF30920072D2FAE9 /* RSPreferenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F75AD21D817C917009688B0039F2FDC2 /* RSPreferenceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06D6F74B8BF4051B4BBBD387BC6E6C87 /* RSECommerceFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5B0EE6F036A450C7A0A2C253A44435 /* RSECommerceFilterBuilder.m */; };
+		09478163DF186D3486FECA06AF606DEC /* RSDBPersistentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F0C741BC70E95E7C5B06E08A8A037C /* RSDBPersistentManager.m */; };
+		09D9982D5D4398B60C07293DEB2A90C1 /* RSCouponDeniedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B974246D560577C91AF0FBF3F11D43E /* RSCouponDeniedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B0FDA5928BD5DD4834C6BF2B4EA91CE /* RSIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A94893CC642A1CE6744A9193E95B22 /* RSIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D16BFCD4F08C959A15BDE4660F226EE /* RSConfigBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B88EA54BBF037664F74D8AEA9170561 /* RSConfigBuilder.m */; };
+		1091E4F192E90DE7B96C991AC746A23D /* RSEventRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 47521D9D4987646C73BD3798AF84D4DF /* RSEventRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		117B2BA7F89BB930F4D22FBCDE7C3E6E /* RSProductListViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE4E8A9A458ABFCE2062796D63D3DF /* RSProductListViewedEvent.m */; };
+		127585B779C4748EACBCEBF4490BF6D4 /* RSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C549FADCAC5029F4984820F05C31E4 /* RSUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1656BE704598DDFA97A243025B1BF01B /* RSOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6CF8AFA4515CDB46246E6AFABE90 /* RSOption.m */; };
+		17EA4963D3AFA47E1A5DC5ECB7F4E814 /* RSECommerceFilterBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C51927F6C949A80A4B1932377847EC /* RSECommerceFilterBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		191B01080304A1DCB03B3BB69FE34B38 /* Rudder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A751E82D6E36568E82BF5F6D313E9E80 /* Rudder-dummy.m */; };
+		19F7D3DB7754BCB31DE872B283B932D6 /* RSProductViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ECF24A5A6E5559156872402FA7BE64 /* RSProductViewedEvent.m */; };
+		1B06C2348ACEC37FE5A4DCAE0A21FF6B /* RSContext.h in Headers */ = {isa = PBXBuildFile; fileRef = AD800F2676FD2BC454AB3EF1C07DEC99 /* RSContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BC5E9AFCFEC86983F33699130707684 /* RSECommerceCheckout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5DB44D05799E7A723DF96AFFA8FC6F /* RSECommerceCheckout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D30DDF03804130D0464EDBD98E53337 /* RSECommercePromotion.h in Headers */ = {isa = PBXBuildFile; fileRef = E5ECB28181C976E226CC01BF3F6D7BB3 /* RSECommercePromotion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E3D48C7FAB5B4F63387D0D16B96F539 /* RSECommercePromotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5EDCD5AC49736EE715EDD732B78C37 /* RSECommercePromotion.m */; };
+		1EF4DC5F0CA55C4E5049E4791FC3494C /* RSECommerceParamNames.h in Headers */ = {isa = PBXBuildFile; fileRef = D285BC6FEC7977D3B4236A3EB106669D /* RSECommerceParamNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20704FCAD369FC79576FB36C9B1DB1D8 /* RSECommerceOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EAEC00A94F496E5E0E8C231FC58DD13 /* RSECommerceOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D6EBD2C791E76B8B8B678B385A26B7 /* RSServerDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = C07BB9F27759D92EEB3C758A4E73C9BA /* RSServerDestination.m */; };
+		20E69207E3F24A943B7C66EB8E3822DC /* RSPreferenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E03561C218A70530AE9C0E61FF2E57 /* RSPreferenceManager.m */; };
+		2243794BB33D05182A86C2F517078E35 /* RSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0EEBFE6336AE7F82FCCECA5B84EA28 /* RSConstants.m */; };
+		23EC151FB95E0EDF8149D0157C978FE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBA48CACF9AF0E19219C1EAC5155CE9 /* Foundation.framework */; };
+		262CC69E75F4688A3084CF363F87F42D /* RSOrderCompletedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 72045D5F228182B59C387BD7A4643206 /* RSOrderCompletedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		267792467F873F6BCC1E334C0F190280 /* RSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5649593E174F24DDA9E8E655A0D254DE /* RSNetwork.m */; };
+		269231C4CF3062983843BA3D5F9F957C /* UIViewController+RSScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3419B95C823C0BA63E719C45EF6263 /* UIViewController+RSScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		283D134BC6BE68A4546B11F5D1180550 /* Rudder.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD711A86C323D27D164D8D8ACDBAE80 /* Rudder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292CE3AB1FE57F955E49E8D627DF76F0 /* RSServerDestinationDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = C2462FF70EF2E33471108D3A86A7C67F /* RSServerDestinationDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF3593D2AA789A8FACACCFEF45EC7CE /* RSCouponRemovedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4A4239C101AF2F04F50CC34CD02E99 /* RSCouponRemovedEvent.m */; };
+		2B3ABB5AC67C6A7AA338D379421CB76D /* RSWishListProductAddedToCartEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4964070A3234910362E5829CD856FE0D /* RSWishListProductAddedToCartEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EF10CA6942FB15844D5BAD490235DA3 /* RSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C823CA04942B835AA93BE776DD6F0887 /* RSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2151B83D76B12A102615BD6C779C74 /* RSServerDestinationDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E7BA3761E4A18E6C3BE55A82F7B9D3 /* RSServerDestinationDefinition.m */; };
+		2FBD26622DCB604F2C0E74653500AB25 /* RSECommerceCartBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C86FB84A314769515ED76EC79925D6 /* RSECommerceCartBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FFE2078941854DB8C8AB442579B7E24 /* RSTraitsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A679C9BAA5D928219AB7BD8DE59B1324 /* RSTraitsBuilder.m */; };
+		30E8836909AB9811E6D9E218C7E0D3C6 /* RSCheckoutStepCompletedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 377ECE4E052AAC29376AB4349F835282 /* RSCheckoutStepCompletedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32E479FC6B1BFADE16112076C5779FE8 /* RSOrderCancelledEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C42ADED66342DCB961B1AB4FA39FE1 /* RSOrderCancelledEvent.m */; };
+		342F51AC6EC065F9FBD6CAC0FF78B7E2 /* RSCheckoutStepCompletedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 214598E9D94D313788D75069B5A5FE2E /* RSCheckoutStepCompletedEvent.m */; };
+		35742BCB125D5DABAF07D0F45666AB1D /* RSProductListFilteredEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2B285A9B99F97BF08A2D806ECFADFC /* RSProductListFilteredEvent.m */; };
+		35E35E04FC587319896D1311EE9A0B18 /* RSEventRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C707A0CDF07B9258DDC1D2A421C3FB9 /* RSEventRepository.m */; };
+		3A59D5E1F31C48D821453F8AE9546454 /* RSDBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1546CA528A6F0D3B41C5642DF580E7 /* RSDBMessage.m */; };
+		3A8E8010DC5DD8D3BE8035A80D27067A /* RSElementCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 218CB99CD475E89EE725543B9F673C08 /* RSElementCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE07D516975C754C2AED0AD4F1A1D8C /* RSTrackPropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EADBC189BFB09D4747A0071D49C74A78 /* RSTrackPropertyBuilder.m */; };
+		3D1DBE99E7DAF365CA652BE4065CEC10 /* RSServerConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E362D0F638733D81CC02F86DEC3E82C1 /* RSServerConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D2B847D09795514C0F825D6A392F483 /* RSTraits.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B52E83E3304E2DA341066ECF20867C7 /* RSTraits.m */; };
+		3E45E87494588BCAA88EF442316C1662 /* RSProductReviewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 30480A056B48FEE64B8BBEADB680075E /* RSProductReviewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F3F16C7A3F480E7594B64C242E87B1F /* RSCartSharedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = EE92C9D45C53ABE0613087CB327F0B3C /* RSCartSharedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40581A71D67AAA1AE696C3C998D9530F /* RSProductViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F07D77814538E33025B07BBF155796 /* RSProductViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		408EE344DEEFDE6AA71517BA5286B244 /* RSProductAddedToWishListEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 000E47DE14DB5899C743C64FD749A030 /* RSProductAddedToWishListEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4127220697E396E7E602A3DC431E4495 /* RSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572F856512A8CED68D0A200E4D93CED /* RSUtils.m */; };
+		42B81304A5178BE499939FA7D9DB684E /* RSElementCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C31C1FE74B4BB369B16CE98133E251C /* RSElementCache.m */; };
+		433E4306EF54E3FB1ECB04A7AF16805B /* RSECommerceSort.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B88B0AC6FC575FD1D0C9D2F13D541B /* RSECommerceSort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4378EE298B4EFB154BA867CD01692409 /* RSPromotionViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 184306DD1080D79890514815FBC81B0B /* RSPromotionViewedEvent.m */; };
+		441DE20F31729006D7E7AB81998CAA5B /* RSOrderRefundedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C07135389CB4E6CF5EDFB4750F04C2 /* RSOrderRefundedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4597B5F55C8ACAA3DDA2DD4DA5ABCFEF /* UIViewController+RSScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E02FA6E5DAA27AEDF79F0C65D06201 /* UIViewController+RSScreen.m */; };
+		4692720636E542C8D37099B5AD28C385 /* Pods-Stream Test (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EADBDCFABCD3482105A8FA311AC39D91 /* Pods-Stream Test (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4743C99AA512762D784840CEAA066641 /* RSScreenPropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AAF59A5053074C0E5F8E4ADB3B7180 /* RSScreenPropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488C509E98B3808BA282EAB0BCD62049 /* RSECommerceSortBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3CB94513E5F1DE642342FA68099C06 /* RSECommerceSortBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		497AB27EA3DE27819560021D3F57DE68 /* RSECommerceCart.h in Headers */ = {isa = PBXBuildFile; fileRef = CA823023ACCCB62CDAEB0D5BA2D0E54C /* RSECommerceCart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7AB1CBBBC61ABFFC0AED7095420758 /* RSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D26A4C357CFB758588F1EE9A7F1902 /* RSProperty.m */; };
+		4C3C21E1C2B13050FEF8C6FFE527D0A2 /* RSOrderUpdatedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E23AED5BDCBA7F47174BA496388CAA /* RSOrderUpdatedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CA843AC6B76C0F0A2B91823ACF31418 /* RSECommerceCheckoutBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C66B793E75113C82295FACA59EDBF9 /* RSECommerceCheckoutBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D0669A0A3542FD50D071C1F95381C83 /* RSApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD35B18D483770339F6AC996D53721F /* RSApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		535DCED514933FA3D7DD50FABAF3D4C1 /* RSDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8A1C588AE86271A65EAE640208ABC1 /* RSDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A363EF9E98128B6B84421D46655673 /* RSECommerceProductBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00556B6090468D9EF2EAC4FF79ED45B8 /* RSECommerceProductBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BEC481C57C2EFC098F210837F8A386 /* RSProductSharedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA8C7D8E6FDF5841B44DF75011D111D /* RSProductSharedEvent.m */; };
+		591282B7BEF4AD57662DF3480F82E778 /* RSECommerceSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACFACB8852998BE089B35239E5D83D0 /* RSECommerceSort.m */; };
+		5AED244C7AEED3DBF4CF2F95F3B86DEE /* RSProductRemovedFromWishListEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D897CBFF7177DD8175D9DC0BBB0FF1F7 /* RSProductRemovedFromWishListEvent.m */; };
+		5B26F86C05261196F3E0DDBC98C405ED /* RSPromotionClickedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 870B3FAEF05CBEA069251BB548F5B3DE /* RSPromotionClickedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC3FC5D788C61BA90113FEEE8A491F1 /* RSOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 529C4A7F979C88C7214FDB5E212D65B2 /* RSOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE5F266F31A735D3DE8A93A5B4FE641 /* RSProductRemovedFromWishListEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1F33520A69AB6C34678CD69B0E2ADD /* RSProductRemovedFromWishListEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EA0921A10AFF067D72C3C236B4EB8F3 /* RSPagePropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D366ACB6CAE7DC99CCC500DBEDD4BD3 /* RSPagePropertyBuilder.m */; };
+		5F4EFDA13D2818B40B20BDC9189496BA /* RSMessageType.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FDAD27A4B25BBABA08E6E686A49236 /* RSMessageType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F5BFDEB062D99F3C1759FE2C24B5256 /* RSECommerceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB988A7878D50235CD63FE7FD1D56EA /* RSECommerceFilter.m */; };
+		5FCA0A90FEB147E100EE113399448275 /* RSPaymentInfoEnteredEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8F80E0413B10EEA095DD1A0B032E2D /* RSPaymentInfoEnteredEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6062022571DAEC908B9C7D4B0526B69B /* RSProductClickedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C5ECF01937571765DD35D4B474F918 /* RSProductClickedEvent.m */; };
+		61AE2D7A3C20EFAD3FD476737A984CD8 /* RSScreenInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4929061AA9AB720CED6C328803A13926 /* RSScreenInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61DE36CADB7F4F548708F211FEB0FEB5 /* RSProductListViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = EC846EE8772585668C0AD42ADB4FB433 /* RSProductListViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F0E493FEB1473F88D8FF7E6DF06851 /* RSOrderCompletedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4632B55B57A8265EC42E4B6F27A92DCE /* RSOrderCompletedEvent.m */; };
+		6252D06B315C6564FF00417662962862 /* RSECommerceCartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FCE3D1C2B8EB283E24E3C411DD68D /* RSECommerceCartBuilder.m */; };
+		6277E3A545417D13A4D25E06597C5B97 /* WKInterfaceController+RSScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC908CF1419005191863D57A076EBC5 /* WKInterfaceController+RSScreen.m */; };
+		62D8AF27DFB83073A8720BD0528134AD /* RSECommerceProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = F3956C9C08809027A4B28C64D6F6E183 /* RSECommerceProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63498834FA7063B0399601AEBBF20237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B16880999643067185758F91DB0AF4 /* Foundation.framework */; };
+		64436E137967F775937D971E7538F6A7 /* RSECommerceCoupon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E39520C67308B141270BDB2A934DCC4 /* RSECommerceCoupon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6615D02D8ED1F6D041B79494F26E5229 /* RSProductReviewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7459AC868074AF9CDE9420282E2579 /* RSProductReviewedEvent.m */; };
+		689EC8D55B1C91D4EE2B7C7882806628 /* RSProductClickedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C829C93EACD6FFF6A510F3F645022D53 /* RSProductClickedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69BAB9DD3ACFADFF7EF778D9BB497475 /* RSCheckoutStepViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFCBE48F8364909D3E0FC979CAF4D59 /* RSCheckoutStepViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AD94D74479526B324FC3E5F7FDEDC69 /* Pods-Stream Test (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF150C1E27A6BE0587696EFC069005B0 /* Pods-Stream Test (iOS)-dummy.m */; };
+		71EDD4DD9254201511D81F16418E435E /* RSECommerceCoupon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA96164C75A2BBDAD15C4DB3633719C /* RSECommerceCoupon.m */; };
+		72D26E0671198E7BA05BDE320B4E074C /* RSMessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E01413F6D101E2A46F9C21F022FDD001 /* RSMessageBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		737D11AE8D92E169FB3EBB4576FF71D9 /* RSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9829EF1FF774756206E3D8E18AD395 /* RSProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7409ACAC5580ED1E3251158C8AC4283D /* RSCartSharedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 89479DC5824ED5AC082441E1D0991A1F /* RSCartSharedEvent.m */; };
+		76ABC6F3B7E580057D63501F351895A8 /* RSMessageType.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E7ADAFFCFFBA3074D20CEF672E0471 /* RSMessageType.m */; };
+		78CCC21DBCAFD6B04F283D7AF7A036AE /* RSECommerceCheckoutBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1FA99434F28708A1D3D53EF9D38A9 /* RSECommerceCheckoutBuilder.m */; };
+		797BE92C791A0FA4C1ECFA3156906009 /* RSScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB907A427834911A08FED06C7FBFD094 /* RSScreenInfo.m */; };
+		7A7172142F0D652DDEE1AD4BEBA81898 /* RSECommerceCheckout.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DF8FF0A5714C3C9B3E6FA827704471 /* RSECommerceCheckout.m */; };
+		7ABB0008239133E2CA340BAF255033AA /* RSECommerceWishList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD5C127EE16095F088C84C6483E5766 /* RSECommerceWishList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B26D49E9F1B3440BF483C70907CFF07 /* RSECommerceOrderBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D52957FA050F74B3D9DAE862C2A9C254 /* RSECommerceOrderBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C13E83E027B139B1B6B331B776F2F99 /* RSTrackPropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B928B076FAA85941A079C699162F6B /* RSTrackPropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC362194193A155C4B5786A71BB7B0C /* RSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8704C3274B9EA308E89006D8A989F5F3 /* RSContext.m */; };
+		7EC6821E89B439D56E8312559815F877 /* RSServerDestination.h in Headers */ = {isa = PBXBuildFile; fileRef = B06AA0A02B8693B4AE7FBDD80E259A98 /* RSServerDestination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F3E6E613CD104894210F2FBB8FA0D30 /* RSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CF6F5AB6C874D2AD1FCCDF3EB9ABBB /* RSApp.m */; };
+		7FDBB1269975C19DF0EB0B36A4054E9A /* RSCheckoutStartedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = FE50F7668A0705E38FEC27EEF2BF88E6 /* RSCheckoutStartedEvent.m */; };
+		82423982A73C57AF1CCC1533CAF30647 /* Pods-Stream-Test-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97F421500A741380D6310A21DF50D37F /* Pods-Stream-Test-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C047E493725982A833D34D1C576F19 /* RSECommerceProductBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FED1F82A5120E2538A6684C5AF00B64E /* RSECommerceProductBuilder.m */; };
+		850C83C772B724E60DBD1BBC44CE5515 /* RSECommerceWishListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 64736161C6B18EB488864132946C069A /* RSECommerceWishListBuilder.m */; };
+		8593AB9324979A66F29F9103611C98A5 /* Pods-Stream-TestTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A99E1714DF91F19A3824142E8FA86AF /* Pods-Stream-TestTests-dummy.m */; };
+		85C93DD5838B759E87645D1E02B6AE98 /* RSScreenPropertyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8901A4E6975AB7284B698F57E17D0F2 /* RSScreenPropertyBuilder.m */; };
+		88C7BD6858E93904AAB44EF40AB1B993 /* RSProductAddedToCartEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA66E18AEFE6A2358D04147D18A6FC4 /* RSProductAddedToCartEvent.m */; };
+		89F5DA511B39FA37E04AC54FB8251354 /* RSECommerceWishList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C42A1EB1B4400CD5B9F8BBA5511BF /* RSECommerceWishList.m */; };
+		8BAA49ACE32C79ECDD1AE09A15042E0D /* RSProductRemovedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E28672C4B56EC2ED8A3BAD3C9C912C /* RSProductRemovedEvent.m */; };
+		8DA12CAE5C69D13362641A2D2CBF13FB /* Pods-Stream Test (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F28E09F6AAB743B5EDC32044C5BB8599 /* Pods-Stream Test (macOS)-dummy.m */; };
+		93A6ED01D15CF91DA939D6B00EBCD83F /* RSECommerceWishListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BAAC277D77D6E5C56EE2F277C6B7EA /* RSECommerceWishListBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9570E4B5EDF3BB6134584FE4D078AEE1 /* RSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7856EF0850A859110A07856274401096 /* RSClient.m */; };
+		96334E3F11EB6F747A6C6ED5D331271B /* RSECommerceEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 029F6A701B669C7A85241AF33F290DBE /* RSECommerceEvents.m */; };
+		979CAE86620B1707E4330FCCBD5F2184 /* Pods-Stream Test (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB2970376BFCAF359A3BBEC6A425BE6 /* Pods-Stream Test (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		983CB3E8BEBAE228CA91480F7B3B949D /* RSProductSearchedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E4625E9ED4AA8DB0B31F97DAA1E6254E /* RSProductSearchedEvent.m */; };
+		992A11C1A1F24AEF01A790FE183A6A41 /* RSOrderRefundedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BF3A2E2893B6044F86A49F70279F39 /* RSOrderRefundedEvent.m */; };
+		992D451E3E8561AB1187FE6E4A64195A /* RSProductListFilteredEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 471B2655E6B351EA3B5F6571D5201113 /* RSProductListFilteredEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99739E4B7B793623C7062CD5B2C4CB65 /* RSCouponEnteredEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 545323C84F25772C9763C9467401685A /* RSCouponEnteredEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C02366A6E6AE5B95F73328036202976 /* RSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 66642E4E47A796D26AF3A061DE9C7A1D /* RSDeviceInfo.m */; };
+		9D95661E0D60AFCC2DA35C69E6E3538D /* RSPaymentInfoEnteredEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BACBF475A198394713FA6974FDAB2AF /* RSPaymentInfoEnteredEvent.m */; };
+		9F4DD3F18A12C5B7D37D8DF2CCFAAB75 /* RSOSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 71178B8DACD0DB293A8E84FDBEE6BC15 /* RSOSInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0CCB350FE9F24B8A4C2C9707C22CF9B /* RSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EB64DCB7E47F69664CA37BE0043E04 /* RSLogger.m */; };
+		A0FBF3017434B9A8F1EF89452C7DC67D /* RSECommerceCart.m in Sources */ = {isa = PBXBuildFile; fileRef = F08E121D07C50D421CB673C3EB8963FD /* RSECommerceCart.m */; };
+		A1DA5F354D4945CC75737BD7CA2518E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76603492F62D69443C2C76B80801E696 /* Cocoa.framework */; };
+		A2551DA8BE933853D42452DED5F23B19 /* RSPromotionViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 017AB324D808F8897239377704404595 /* RSPromotionViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3FC16AD7AFF4F05619420CC03E6708C /* RSECommerceEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E81146B7F6E280964A43B34386D218 /* RSECommerceEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3295E614E70B275FBF2724BA566074 /* RSCouponDeniedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC91CA070468041342A9A219E37716B /* RSCouponDeniedEvent.m */; };
+		AA519C3B413745E15E1CB62DAD68158C /* WKInterfaceController+RSScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EA8FF2061DF09470C533B38754F09D /* WKInterfaceController+RSScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF434329FBF948D82AFA13BF7A1F35F /* RSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5B6E40AABA8CB94567BA43CBDA4958 /* RSConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF4E04C28BE541053175DB4FC5C16EA /* Pods-Stream-Test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FA376CC4C52522724F4DF2C5257EA9 /* Pods-Stream-Test-dummy.m */; };
+		B04BE1045541DE9C65DD38DE87B2148B /* RSECommerceSortBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C602DF81C879B2557100DD2C2A3E5DF0 /* RSECommerceSortBuilder.m */; };
+		B2F614ED65D6D59AFC3B845081DF1190 /* RSCheckoutStepViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C221C843311FC464AB0D8C0B09E6CD /* RSCheckoutStepViewedEvent.m */; };
+		B30D20B0D0E891CE0E84192A06967BAF /* RSCartViewedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E532DAF6BAD761DB4A06195BFA27F /* RSCartViewedEvent.m */; };
+		B501EBB3A97C2ADE3C5B385EA7A203D1 /* RSPagePropertyBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E78F621912651DE221F8BDD7DFB58B /* RSPagePropertyBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53BC4A7A0D084DDCEDF82CDF809C29D /* RSServerConfigSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 570362FA1BF7A76E98CE4F161DA676C1 /* RSServerConfigSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5D81A7AA2AAD130F9A38EEC082CDBC6 /* RSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7A4D4DDD79337DDFDBE3488446231E /* RSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8705CDE73A812FE57DA3BAAFB1F3686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBA48CACF9AF0E19219C1EAC5155CE9 /* Foundation.framework */; };
+		BC3DB4DCA819B123187232410EDBDC2C /* RSOrderUpdatedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C32E56FC475B64E616D73F3E32B06 /* RSOrderUpdatedEvent.m */; };
+		BF755260A911488DE3FF63A80400A6B5 /* RSTraitsBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D855B7A013163586F62A684C6672AD7 /* RSTraitsBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFDC4B14046042827CBDD00CC9A4024D /* RSConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE8B9738972EBF5972830C664978DDF /* RSConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C03A0B65E8985B31EA927C924083B11D /* RSCouponAppliedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F0A527B31D669EC6E22FE7FEA99A9 /* RSCouponAppliedEvent.m */; };
+		C0DA803783CD504A4D9BE8AAC2B99D49 /* RSECommercePromotionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 653DA9BCD938E1BE7EB4733F14374321 /* RSECommercePromotionBuilder.m */; };
+		C3610666C22B7EB9533F2F9184ADD15E /* RSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CC848328B7E2797ECBCACCEFA709FE /* RSMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A20F0018E37FAEA8E45E293D24436E /* RSProductAddedToCartEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1CCA7CAFCFA48F536ECDD395CAF8A5 /* RSProductAddedToCartEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C855B44CFDBB2CC8475B1178DAB746F6 /* Rudder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB556C51E309080A065349844C78ABE5 /* Rudder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C885ED0422AFCA1E4C7CCFBC227F5328 /* RSLibraryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 809DA3BB3DC205603D75BEAAF9786B67 /* RSLibraryInfo.m */; };
+		C947364C48AF64D577C6ADCDB5D4C4C7 /* RSServerConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C12FCF61582BAAF3B41BB441FAFEADF2 /* RSServerConfigManager.m */; };
+		CEF80ACD2DAEE87419B92DDF1E519C20 /* RSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B9479316A2F8E0A99D8F3A85F457BA2E /* RSMessage.m */; };
+		D02164384384C84B3BD17B8250F6B472 /* RSProductAddedToWishListEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9CC183A8B5B86CDF21F66BD4339FFC /* RSProductAddedToWishListEvent.m */; };
+		D06E58C6184D44D40A647624D1731CC8 /* RSECommerceOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B219F3FAE8885DA3A264C368E51452 /* RSECommerceOrder.m */; };
+		D2E09159BB2DC6575878D8FAF6DEB239 /* RSDBPersistentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F7BCF69597F41F733ABD8F1B3FDB39 /* RSDBPersistentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D45754D360FB22E08780B3ABC6E10AEC /* RSProductRemovedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 501DF9332319EE742121098F5504F000 /* RSProductRemovedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6B74BA92CFF34721115530176224EAE /* RSCartViewedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 839E5BF5F422C655C47F5D0B754AB70D /* RSCartViewedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D70C81A83C7F5BA65D81278B14ADA4C3 /* RSIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4281EA7FFD02447C0DB48AB5B10BE580 /* RSIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E68DA6B785B4CBEDAFB7F099933C5E /* RSLibraryInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 583BB8F4DAD324A5B8ACD3B538335231 /* RSLibraryInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9DC108808DF3961EB38EFBFA554AE6B /* RSOrderCancelledEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADCB0C6DAB3C130D7F11041A508AA3F /* RSOrderCancelledEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAFECA48A650568F0343A1EC70F9ADA8 /* RSECommerceCouponBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 97699E088FA3D3D40CAEF41880C3BA1B /* RSECommerceCouponBuilder.m */; };
+		DDAC53065BCB47FAA27B70D1626E6293 /* Pods-Stream-Test-Stream-TestUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE58B2ACFEE1811EF479AAE65021F9C3 /* Pods-Stream-Test-Stream-TestUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDE7FD891F02E3DBD1BF96F666973E07 /* RSProductSharedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9127D6EDE2078E6BDE8B3EF834420FFC /* RSProductSharedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF6BF1FA117D0CAF371319030F84F2E7 /* RSCouponRemovedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1D764D36224E4AD1A0CF875D2BF783 /* RSCouponRemovedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E047FF584766C2942B9EA348C16F4129 /* RSECommerceCouponBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EC221F841DDF4F0585ADCB52FFC5944B /* RSECommerceCouponBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E07FA1A4456692A31E08BA5EF1EB7A50 /* RSECommerceProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F10D7FFEFF0B406D074D8AC08FAFFB3E /* RSECommerceProduct.m */; };
+		E1C4364036B3B1D4C5054E1985B08237 /* RSServerConfigSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B299B7D8B79EA6388944E700F5201898 /* RSServerConfigSource.m */; };
+		E5467DF36789AB1FBCFC51D450AE75DC /* RSNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE9321C73A9DF447F15026A2F96637B /* RSNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E572374E251D6C744BBAFDB1B84F9D90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBA48CACF9AF0E19219C1EAC5155CE9 /* Foundation.framework */; };
+		E63887D7EACE67EC6BB9AE3286EC7902 /* RSMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDE7F7FA82A664EC77216B0B93A383F /* RSMessageBuilder.m */; };
+		E6618F23C048E7C5AE9DAEFEF0F2ECDF /* RSDBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3AF7A6AAABF5409FEDA66316558F48 /* RSDBMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAF01C6BC2AA40D6EF3F189D1FBD0793 /* RSECommerceOrderBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BBF0E63213E06E59694D988B928677 /* RSECommerceOrderBuilder.m */; };
+		EB21DC41E12924E4378CDF11C0C9FC14 /* RSECommercePromotionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DEF1030233B3826B5BF345B8E34F52 /* RSECommercePromotionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBD8D04B4C350C5201D274CDCBF363BC /* RSCheckoutStartedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDC115D494AAB58DC0503040E5553D7 /* RSCheckoutStartedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDD40086E517E1A33DE9D6DC75B2E3C4 /* RSECommerceFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CBFA88DB3ABE3C1ECA7BB461E6BC4D80 /* RSECommerceFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE62C9CB095BEE3356529431E715F044 /* RSPromotionClickedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1FEFBB6C3F12BE82C35777A3072606 /* RSPromotionClickedEvent.m */; };
+		EF5F75A1A91C513F628A0DB1C45052F7 /* Pods-Stream-TestTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1354FE126B46B27D1071AAF1C58BC11D /* Pods-Stream-TestTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0D4E0396C432237794CB450C78FBF90 /* RSOSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CF3FBD96AC161EC6349EA3CDE93B1 /* RSOSInfo.m */; };
+		F1AD0EFA4A2927DDF9F5FBA7526F27CA /* Pods-Stream-Test-Stream-TestUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB09FF1D2CDAA9F02ADCC3B9A9DD354F /* Pods-Stream-Test-Stream-TestUITests-dummy.m */; };
+		F6D1151705409D25AE87FC5CFEF1365D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBA48CACF9AF0E19219C1EAC5155CE9 /* Foundation.framework */; };
+		F899782FFEF4D8DB44B1BC557A13C769 /* RSProductSearchedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CD956016308AEB8311AB72DEC75D3 /* RSProductSearchedEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC2D84E08850B92FA23DDD93ED1D974 /* RSCouponEnteredEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 81711AB09433B0837A90FD6267C75BEA /* RSCouponEnteredEvent.m */; };
+		FE57167DBFBEEB70F04D0036585BB2C2 /* RSECommerceParamNames.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B6FE0229F4C84DEE063F6A95680C50 /* RSECommerceParamNames.m */; };
+		FF92F110E111782F76F0E279805B9678 /* RSTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 17648F98A78C0405CAC94552231EBC56 /* RSTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134EB4A10E70D21E1320D9D39B91047F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C6323F415EBC1C6BAD0C1E271A0C4D;
+			remoteInfo = Rudder;
+		};
+		7544DFF48DA61A9D5E45954383069BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAD76862C435D904F1FBB73C43EF7E2;
+			remoteInfo = "Pods-Stream-Test";
+		};
+		8A3607CD9897A180947738E50F307BB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C6323F415EBC1C6BAD0C1E271A0C4D;
+			remoteInfo = Rudder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000E47DE14DB5899C743C64FD749A030 /* RSProductAddedToWishListEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductAddedToWishListEvent.h; path = Sources/Classes/Public/RSProductAddedToWishListEvent.h; sourceTree = "<group>"; };
+		00556B6090468D9EF2EAC4FF79ED45B8 /* RSECommerceProductBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceProductBuilder.h; path = Sources/Classes/Public/RSECommerceProductBuilder.h; sourceTree = "<group>"; };
+		017AB324D808F8897239377704404595 /* RSPromotionViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPromotionViewedEvent.h; path = Sources/Classes/Public/RSPromotionViewedEvent.h; sourceTree = "<group>"; };
+		029F6A701B669C7A85241AF33F290DBE /* RSECommerceEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceEvents.m; path = Sources/Classes/Ecomm/RSECommerceEvents.m; sourceTree = "<group>"; };
+		04E78F621912651DE221F8BDD7DFB58B /* RSPagePropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPagePropertyBuilder.h; path = Sources/Classes/Public/RSPagePropertyBuilder.h; sourceTree = "<group>"; };
+		04EA8FF2061DF09470C533B38754F09D /* WKInterfaceController+RSScreen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKInterfaceController+RSScreen.h"; path = "Sources/Classes/Public/WKInterfaceController+RSScreen.h"; sourceTree = "<group>"; };
+		08DF8FF0A5714C3C9B3E6FA827704471 /* RSECommerceCheckout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCheckout.m; path = Sources/Classes/Ecomm/RSECommerceCheckout.m; sourceTree = "<group>"; };
+		09BE4E8A9A458ABFCE2062796D63D3DF /* RSProductListViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductListViewedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductListViewedEvent.m; sourceTree = "<group>"; };
+		09D2008696763C8CE800D5EFC0A4070C /* Rudder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Rudder.modulemap; sourceTree = "<group>"; };
+		0AC908CF1419005191863D57A076EBC5 /* WKInterfaceController+RSScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKInterfaceController+RSScreen.m"; path = "Sources/Classes/WKInterfaceController+RSScreen.m"; sourceTree = "<group>"; };
+		0BD5C127EE16095F088C84C6483E5766 /* RSECommerceWishList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceWishList.h; path = Sources/Classes/Public/RSECommerceWishList.h; sourceTree = "<group>"; };
+		0E39520C67308B141270BDB2A934DCC4 /* RSECommerceCoupon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCoupon.h; path = Sources/Classes/Public/RSECommerceCoupon.h; sourceTree = "<group>"; };
+		0EBB432EA825E0B031D4B798B0A53B0C /* Rudder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rudder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1D764D36224E4AD1A0CF875D2BF783 /* RSCouponRemovedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponRemovedEvent.h; path = Sources/Classes/Public/RSCouponRemovedEvent.h; sourceTree = "<group>"; };
+		0F8F80E0413B10EEA095DD1A0B032E2D /* RSPaymentInfoEnteredEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPaymentInfoEnteredEvent.h; path = Sources/Classes/Public/RSPaymentInfoEnteredEvent.h; sourceTree = "<group>"; };
+		0FB988A7878D50235CD63FE7FD1D56EA /* RSECommerceFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceFilter.m; path = Sources/Classes/Ecomm/RSECommerceFilter.m; sourceTree = "<group>"; };
+		12BBF0E63213E06E59694D988B928677 /* RSECommerceOrderBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceOrderBuilder.m; path = Sources/Classes/Ecomm/RSECommerceOrderBuilder.m; sourceTree = "<group>"; };
+		1354FE126B46B27D1071AAF1C58BC11D /* Pods-Stream-TestTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stream-TestTests-umbrella.h"; sourceTree = "<group>"; };
+		168896208E9358A4B015C22D538BC60A /* Pods-Stream Test (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stream Test (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17648F98A78C0405CAC94552231EBC56 /* RSTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSTraits.h; path = Sources/Classes/Public/RSTraits.h; sourceTree = "<group>"; };
+		17B219F3FAE8885DA3A264C368E51452 /* RSECommerceOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceOrder.m; path = Sources/Classes/Ecomm/RSECommerceOrder.m; sourceTree = "<group>"; };
+		184306DD1080D79890514815FBC81B0B /* RSPromotionViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPromotionViewedEvent.m; path = Sources/Classes/Ecomm/Events/RSPromotionViewedEvent.m; sourceTree = "<group>"; };
+		1BE8B9738972EBF5972830C664978DDF /* RSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSConstants.h; path = Sources/Classes/Public/RSConstants.h; sourceTree = "<group>"; };
+		1CA8C7D8E6FDF5841B44DF75011D111D /* RSProductSharedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductSharedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductSharedEvent.m; sourceTree = "<group>"; };
+		1CCF328A0285909E381035AC25E8D660 /* Pods-Stream-Test-Stream-TestUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Stream-Test-Stream-TestUITests"; path = Pods_Stream_Test_Stream_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAFDEF7877B7C233E2010C05A262026 /* Pods-Stream-Test-Stream-TestUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Stream-Test-Stream-TestUITests-frameworks.sh"; sourceTree = "<group>"; };
+		20C86FB84A314769515ED76EC79925D6 /* RSECommerceCartBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCartBuilder.h; path = Sources/Classes/Public/RSECommerceCartBuilder.h; sourceTree = "<group>"; };
+		214598E9D94D313788D75069B5A5FE2E /* RSCheckoutStepCompletedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCheckoutStepCompletedEvent.m; path = Sources/Classes/Ecomm/Events/RSCheckoutStepCompletedEvent.m; sourceTree = "<group>"; };
+		218CB99CD475E89EE725543B9F673C08 /* RSElementCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSElementCache.h; path = Sources/Classes/Public/RSElementCache.h; sourceTree = "<group>"; };
+		22177C9E06F17F6A3DF1CAC5DFA0EDDD /* Pods-Stream-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23CCA0B81292DBDA935BE664B1176035 /* Pods-Stream-Test-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stream-Test-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24F48DC8F775602589393FD79207AAF0 /* Pods-Stream-TestTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream-TestTests-Info.plist"; sourceTree = "<group>"; };
+		267998BCA54C07D426604C5D95E8EE2C /* Pods-Stream Test (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream Test (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		26E6AE13688FC0398705C7DD0FBBF5B7 /* Pods-Stream Test (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream Test (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		2B1FEFBB6C3F12BE82C35777A3072606 /* RSPromotionClickedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPromotionClickedEvent.m; path = Sources/Classes/Ecomm/Events/RSPromotionClickedEvent.m; sourceTree = "<group>"; };
+		2B2380C20431564B6BD7D73F864D5625 /* Pods-Stream Test (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stream Test (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B88EA54BBF037664F74D8AEA9170561 /* RSConfigBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSConfigBuilder.m; path = Sources/Classes/RSConfigBuilder.m; sourceTree = "<group>"; };
+		2C7E6CF8AFA4515CDB46246E6AFABE90 /* RSOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOption.m; path = Sources/Classes/RSOption.m; sourceTree = "<group>"; };
+		2C9412D8776CB45A339D3378CD2FD6C3 /* Pods-Stream-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream-TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CF1FA99434F28708A1D3D53EF9D38A9 /* RSECommerceCheckoutBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCheckoutBuilder.m; path = Sources/Classes/Ecomm/RSECommerceCheckoutBuilder.m; sourceTree = "<group>"; };
+		2EA96164C75A2BBDAD15C4DB3633719C /* RSECommerceCoupon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCoupon.m; path = Sources/Classes/Ecomm/RSECommerceCoupon.m; sourceTree = "<group>"; };
+		300CD956016308AEB8311AB72DEC75D3 /* RSProductSearchedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductSearchedEvent.h; path = Sources/Classes/Public/RSProductSearchedEvent.h; sourceTree = "<group>"; };
+		30480A056B48FEE64B8BBEADB680075E /* RSProductReviewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductReviewedEvent.h; path = Sources/Classes/Public/RSProductReviewedEvent.h; sourceTree = "<group>"; };
+		30A82A7CC26406D0D6358883474817DF /* Pods-Stream Test (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream Test (iOS)-Info.plist"; sourceTree = "<group>"; };
+		32F001871F33373B85BF586DC9BE0C41 /* Pods-Stream Test (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream Test (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		348C6729C4402D2EF01B5DDBE96A1064 /* RSCouponAppliedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponAppliedEvent.h; path = Sources/Classes/Public/RSCouponAppliedEvent.h; sourceTree = "<group>"; };
+		3509D50980F1E6BA8A2E9C74F64E8E33 /* Pods_Stream_Test__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stream_Test__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F7BCF69597F41F733ABD8F1B3FDB39 /* RSDBPersistentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDBPersistentManager.h; path = Sources/Classes/Public/RSDBPersistentManager.h; sourceTree = "<group>"; };
+		377ECE4E052AAC29376AB4349F835282 /* RSCheckoutStepCompletedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCheckoutStepCompletedEvent.h; path = Sources/Classes/Public/RSCheckoutStepCompletedEvent.h; sourceTree = "<group>"; };
+		3B4A4239C101AF2F04F50CC34CD02E99 /* RSCouponRemovedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCouponRemovedEvent.m; path = Sources/Classes/Ecomm/Events/RSCouponRemovedEvent.m; sourceTree = "<group>"; };
+		3BE9321C73A9DF447F15026A2F96637B /* RSNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSNetwork.h; path = Sources/Classes/Public/RSNetwork.h; sourceTree = "<group>"; };
+		3C0EEBFE6336AE7F82FCCECA5B84EA28 /* RSConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSConstants.m; path = Sources/Classes/RSConstants.m; sourceTree = "<group>"; };
+		3D7A4D4DDD79337DDFDBE3488446231E /* RSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSLogger.h; path = Sources/Classes/Public/RSLogger.h; sourceTree = "<group>"; };
+		3DEEA7FE12FDC6D36194B26667D93715 /* Pods-Stream-Test-Stream-TestUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Stream-Test-Stream-TestUITests.modulemap"; sourceTree = "<group>"; };
+		40BEE9590D2BE4E88E4657E50602CEEC /* Pods-Stream-Test */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Stream-Test"; path = Pods_Stream_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4281EA7FFD02447C0DB48AB5B10BE580 /* RSIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSIntegrationFactory.h; path = Sources/Classes/Public/RSIntegrationFactory.h; sourceTree = "<group>"; };
+		43F07D77814538E33025B07BBF155796 /* RSProductViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductViewedEvent.h; path = Sources/Classes/Public/RSProductViewedEvent.h; sourceTree = "<group>"; };
+		44BF3A2E2893B6044F86A49F70279F39 /* RSOrderRefundedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOrderRefundedEvent.m; path = Sources/Classes/Ecomm/Events/RSOrderRefundedEvent.m; sourceTree = "<group>"; };
+		4632B55B57A8265EC42E4B6F27A92DCE /* RSOrderCompletedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOrderCompletedEvent.m; path = Sources/Classes/Ecomm/Events/RSOrderCompletedEvent.m; sourceTree = "<group>"; };
+		471B2655E6B351EA3B5F6571D5201113 /* RSProductListFilteredEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductListFilteredEvent.h; path = Sources/Classes/Public/RSProductListFilteredEvent.h; sourceTree = "<group>"; };
+		47521D9D4987646C73BD3798AF84D4DF /* RSEventRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSEventRepository.h; path = Sources/Classes/Public/RSEventRepository.h; sourceTree = "<group>"; };
+		47B928B076FAA85941A079C699162F6B /* RSTrackPropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSTrackPropertyBuilder.h; path = Sources/Classes/Public/RSTrackPropertyBuilder.h; sourceTree = "<group>"; };
+		48857619DD54DBE24C48E717EB04DDC8 /* Pods-Stream Test (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream Test (macOS)-Info.plist"; sourceTree = "<group>"; };
+		48C549FADCAC5029F4984820F05C31E4 /* RSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSUtils.h; path = Sources/Classes/Public/RSUtils.h; sourceTree = "<group>"; };
+		48E28672C4B56EC2ED8A3BAD3C9C912C /* RSProductRemovedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductRemovedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductRemovedEvent.m; sourceTree = "<group>"; };
+		4929061AA9AB720CED6C328803A13926 /* RSScreenInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSScreenInfo.h; path = Sources/Classes/Public/RSScreenInfo.h; sourceTree = "<group>"; };
+		4964070A3234910362E5829CD856FE0D /* RSWishListProductAddedToCartEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSWishListProductAddedToCartEvent.h; path = Sources/Classes/Public/RSWishListProductAddedToCartEvent.h; sourceTree = "<group>"; };
+		4A3646706435DFCFF71624F374FD8213 /* Rudder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-prefix.pch"; sourceTree = "<group>"; };
+		4B5F0A527B31D669EC6E22FE7FEA99A9 /* RSCouponAppliedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCouponAppliedEvent.m; path = Sources/Classes/Ecomm/Events/RSCouponAppliedEvent.m; sourceTree = "<group>"; };
+		4C5B0EE6F036A450C7A0A2C253A44435 /* RSECommerceFilterBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceFilterBuilder.m; path = Sources/Classes/Ecomm/RSECommerceFilterBuilder.m; sourceTree = "<group>"; };
+		4CD35B18D483770339F6AC996D53721F /* RSApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSApp.h; path = Sources/Classes/Public/RSApp.h; sourceTree = "<group>"; };
+		4D2F5ADC8A4FD5F198E485BB4FC50FD6 /* RSConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSConfig.m; path = Sources/Classes/RSConfig.m; sourceTree = "<group>"; };
+		4E07D735A5773974A1D2F58F4B51617F /* Pods-Stream-Test-Stream-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream-Test-Stream-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E3AF7A6AAABF5409FEDA66316558F48 /* RSDBMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDBMessage.h; path = Sources/Classes/Public/RSDBMessage.h; sourceTree = "<group>"; };
+		4F5DB44D05799E7A723DF96AFFA8FC6F /* RSECommerceCheckout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCheckout.h; path = Sources/Classes/Public/RSECommerceCheckout.h; sourceTree = "<group>"; };
+		501DF9332319EE742121098F5504F000 /* RSProductRemovedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductRemovedEvent.h; path = Sources/Classes/Public/RSProductRemovedEvent.h; sourceTree = "<group>"; };
+		50A94893CC642A1CE6744A9193E95B22 /* RSIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSIntegration.h; path = Sources/Classes/Public/RSIntegration.h; sourceTree = "<group>"; };
+		529C4A7F979C88C7214FDB5E212D65B2 /* RSOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOption.h; path = Sources/Classes/Public/RSOption.h; sourceTree = "<group>"; };
+		52ED4BF1528C401CD3BA8DBA3CDCCEB4 /* Pods-Stream-Test-Stream-TestUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream-Test-Stream-TestUITests-Info.plist"; sourceTree = "<group>"; };
+		545323C84F25772C9763C9467401685A /* RSCouponEnteredEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponEnteredEvent.h; path = Sources/Classes/Public/RSCouponEnteredEvent.h; sourceTree = "<group>"; };
+		54DEF1030233B3826B5BF345B8E34F52 /* RSECommercePromotionBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommercePromotionBuilder.h; path = Sources/Classes/Public/RSECommercePromotionBuilder.h; sourceTree = "<group>"; };
+		55ADE8104F492A1491621222613B63D7 /* Pods-Stream Test (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Stream Test (iOS).modulemap"; sourceTree = "<group>"; };
+		55CF6F5AB6C874D2AD1FCCDF3EB9ABBB /* RSApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSApp.m; path = Sources/Classes/RSApp.m; sourceTree = "<group>"; };
+		5649593E174F24DDA9E8E655A0D254DE /* RSNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSNetwork.m; path = Sources/Classes/RSNetwork.m; sourceTree = "<group>"; };
+		56B1F1879869BB533CA626EB406570E0 /* Pods-Stream-Test-Stream-TestUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream-Test-Stream-TestUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		570362FA1BF7A76E98CE4F161DA676C1 /* RSServerConfigSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerConfigSource.h; path = Sources/Classes/Public/RSServerConfigSource.h; sourceTree = "<group>"; };
+		583BB8F4DAD324A5B8ACD3B538335231 /* RSLibraryInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSLibraryInfo.h; path = Sources/Classes/Public/RSLibraryInfo.h; sourceTree = "<group>"; };
+		5B0E532DAF6BAD761DB4A06195BFA27F /* RSCartViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCartViewedEvent.m; path = Sources/Classes/Ecomm/Events/RSCartViewedEvent.m; sourceTree = "<group>"; };
+		5BACBF475A198394713FA6974FDAB2AF /* RSPaymentInfoEnteredEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPaymentInfoEnteredEvent.m; path = Sources/Classes/Ecomm/Events/RSPaymentInfoEnteredEvent.m; sourceTree = "<group>"; };
+		5C31C1FE74B4BB369B16CE98133E251C /* RSElementCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSElementCache.m; path = Sources/Classes/RSElementCache.m; sourceTree = "<group>"; };
+		5CE95DC41DE4D74D3D35D4FB0F23C9A7 /* Pods-Stream Test (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Stream Test (iOS)"; path = Pods_Stream_Test__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D74792EE58B8F9E9645F411B5CAA6A5 /* Pods-Stream-TestTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stream-TestTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EEDB463F79E1BC0E5EF9BA3A2A3C8AC /* Pods-Stream Test (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream Test (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		63C221C843311FC464AB0D8C0B09E6CD /* RSCheckoutStepViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCheckoutStepViewedEvent.m; path = Sources/Classes/Ecomm/Events/RSCheckoutStepViewedEvent.m; sourceTree = "<group>"; };
+		64736161C6B18EB488864132946C069A /* RSECommerceWishListBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceWishListBuilder.m; path = Sources/Classes/Ecomm/RSECommerceWishListBuilder.m; sourceTree = "<group>"; };
+		653DA9BCD938E1BE7EB4733F14374321 /* RSECommercePromotionBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommercePromotionBuilder.m; path = Sources/Classes/Ecomm/RSECommercePromotionBuilder.m; sourceTree = "<group>"; };
+		65EB64DCB7E47F69664CA37BE0043E04 /* RSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSLogger.m; path = Sources/Classes/RSLogger.m; sourceTree = "<group>"; };
+		66642E4E47A796D26AF3A061DE9C7A1D /* RSDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDeviceInfo.m; path = Sources/Classes/RSDeviceInfo.m; sourceTree = "<group>"; };
+		68E81146B7F6E280964A43B34386D218 /* RSECommerceEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceEvents.h; path = Sources/Classes/Public/RSECommerceEvents.h; sourceTree = "<group>"; };
+		69DA4544D39C600E4791DF28B063DC0B /* Pods-Stream-Test-Stream-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream-Test-Stream-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A3F4AF420633159B966D850442F144F /* Pods-Stream Test (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Stream Test (macOS).modulemap"; sourceTree = "<group>"; };
+		6A9C32E56FC475B64E616D73F3E32B06 /* RSOrderUpdatedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOrderUpdatedEvent.m; path = Sources/Classes/Ecomm/Events/RSOrderUpdatedEvent.m; sourceTree = "<group>"; };
+		71178B8DACD0DB293A8E84FDBEE6BC15 /* RSOSInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOSInfo.h; path = Sources/Classes/Public/RSOSInfo.h; sourceTree = "<group>"; };
+		72045D5F228182B59C387BD7A4643206 /* RSOrderCompletedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOrderCompletedEvent.h; path = Sources/Classes/Public/RSOrderCompletedEvent.h; sourceTree = "<group>"; };
+		73D51AA0A5E04A949C06F0CE58A892D6 /* Rudder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rudder.release.xcconfig; sourceTree = "<group>"; };
+		76603492F62D69443C2C76B80801E696 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7856EF0850A859110A07856274401096 /* RSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSClient.m; path = Sources/Classes/RSClient.m; sourceTree = "<group>"; };
+		7A99E1714DF91F19A3824142E8FA86AF /* Pods-Stream-TestTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stream-TestTests-dummy.m"; sourceTree = "<group>"; };
+		7ACFACB8852998BE089B35239E5D83D0 /* RSECommerceSort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceSort.m; path = Sources/Classes/Ecomm/RSECommerceSort.m; sourceTree = "<group>"; };
+		7B52E83E3304E2DA341066ECF20867C7 /* RSTraits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSTraits.m; path = Sources/Classes/RSTraits.m; sourceTree = "<group>"; };
+		7B974246D560577C91AF0FBF3F11D43E /* RSCouponDeniedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCouponDeniedEvent.h; path = Sources/Classes/Public/RSCouponDeniedEvent.h; sourceTree = "<group>"; };
+		7C3CB94513E5F1DE642342FA68099C06 /* RSECommerceSortBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceSortBuilder.h; path = Sources/Classes/Public/RSECommerceSortBuilder.h; sourceTree = "<group>"; };
+		7C707A0CDF07B9258DDC1D2A421C3FB9 /* RSEventRepository.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSEventRepository.m; path = Sources/Classes/RSEventRepository.m; sourceTree = "<group>"; };
+		809DA3BB3DC205603D75BEAAF9786B67 /* RSLibraryInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSLibraryInfo.m; path = Sources/Classes/RSLibraryInfo.m; sourceTree = "<group>"; };
+		81711AB09433B0837A90FD6267C75BEA /* RSCouponEnteredEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCouponEnteredEvent.m; path = Sources/Classes/Ecomm/Events/RSCouponEnteredEvent.m; sourceTree = "<group>"; };
+		81E23AED5BDCBA7F47174BA496388CAA /* RSOrderUpdatedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOrderUpdatedEvent.h; path = Sources/Classes/Public/RSOrderUpdatedEvent.h; sourceTree = "<group>"; };
+		82FDAD27A4B25BBABA08E6E686A49236 /* RSMessageType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSMessageType.h; path = Sources/Classes/Public/RSMessageType.h; sourceTree = "<group>"; };
+		839E5BF5F422C655C47F5D0B754AB70D /* RSCartViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCartViewedEvent.h; path = Sources/Classes/Public/RSCartViewedEvent.h; sourceTree = "<group>"; };
+		8572F856512A8CED68D0A200E4D93CED /* RSUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSUtils.m; path = Sources/Classes/RSUtils.m; sourceTree = "<group>"; };
+		8704C3274B9EA308E89006D8A989F5F3 /* RSContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSContext.m; path = Sources/Classes/RSContext.m; sourceTree = "<group>"; };
+		870B3FAEF05CBEA069251BB548F5B3DE /* RSPromotionClickedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPromotionClickedEvent.h; path = Sources/Classes/Public/RSPromotionClickedEvent.h; sourceTree = "<group>"; };
+		8884D9872BC80C67C5CD955AFBEABDE2 /* Rudder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rudder-Info.plist"; sourceTree = "<group>"; };
+		88D26A4C357CFB758588F1EE9A7F1902 /* RSProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProperty.m; path = Sources/Classes/RSProperty.m; sourceTree = "<group>"; };
+		88F0C741BC70E95E7C5B06E08A8A037C /* RSDBPersistentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDBPersistentManager.m; path = Sources/Classes/RSDBPersistentManager.m; sourceTree = "<group>"; };
+		89479DC5824ED5AC082441E1D0991A1F /* RSCartSharedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCartSharedEvent.m; path = Sources/Classes/Ecomm/Events/RSCartSharedEvent.m; sourceTree = "<group>"; };
+		8ADCB0C6DAB3C130D7F11041A508AA3F /* RSOrderCancelledEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOrderCancelledEvent.h; path = Sources/Classes/Public/RSOrderCancelledEvent.h; sourceTree = "<group>"; };
+		8D0C42A1EB1B4400CD5B9F8BBA5511BF /* RSECommerceWishList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceWishList.m; path = Sources/Classes/Ecomm/RSECommerceWishList.m; sourceTree = "<group>"; };
+		8DDE7F7FA82A664EC77216B0B93A383F /* RSMessageBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSMessageBuilder.m; path = Sources/Classes/RSMessageBuilder.m; sourceTree = "<group>"; };
+		8EAEC00A94F496E5E0E8C231FC58DD13 /* RSECommerceOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceOrder.h; path = Sources/Classes/Public/RSECommerceOrder.h; sourceTree = "<group>"; };
+		8F2B285A9B99F97BF08A2D806ECFADFC /* RSProductListFilteredEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductListFilteredEvent.m; path = Sources/Classes/Ecomm/Events/RSProductListFilteredEvent.m; sourceTree = "<group>"; };
+		8FA66E18AEFE6A2358D04147D18A6FC4 /* RSProductAddedToCartEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductAddedToCartEvent.m; path = Sources/Classes/Ecomm/Events/RSProductAddedToCartEvent.m; sourceTree = "<group>"; };
+		9127D6EDE2078E6BDE8B3EF834420FFC /* RSProductSharedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductSharedEvent.h; path = Sources/Classes/Public/RSProductSharedEvent.h; sourceTree = "<group>"; };
+		92D4E735A8B5DEBA00A8B9E283CB8C1F /* Rudder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rudder.debug.xcconfig; sourceTree = "<group>"; };
+		93E7ADAFFCFFBA3074D20CEF672E0471 /* RSMessageType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSMessageType.m; path = Sources/Classes/RSMessageType.m; sourceTree = "<group>"; };
+		97699E088FA3D3D40CAEF41880C3BA1B /* RSECommerceCouponBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCouponBuilder.m; path = Sources/Classes/Ecomm/RSECommerceCouponBuilder.m; sourceTree = "<group>"; };
+		97F421500A741380D6310A21DF50D37F /* Pods-Stream-Test-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stream-Test-umbrella.h"; sourceTree = "<group>"; };
+		9C5EDCD5AC49736EE715EDD732B78C37 /* RSECommercePromotion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommercePromotion.m; path = Sources/Classes/Ecomm/RSECommercePromotion.m; sourceTree = "<group>"; };
+		9D366ACB6CAE7DC99CCC500DBEDD4BD3 /* RSPagePropertyBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPagePropertyBuilder.m; path = Sources/Classes/RSPagePropertyBuilder.m; sourceTree = "<group>"; };
+		9D855B7A013163586F62A684C6672AD7 /* RSTraitsBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSTraitsBuilder.h; path = Sources/Classes/Public/RSTraitsBuilder.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8FCE3D1C2B8EB283E24E3C411DD68D /* RSECommerceCartBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCartBuilder.m; path = Sources/Classes/Ecomm/RSECommerceCartBuilder.m; sourceTree = "<group>"; };
+		A0AAF59A5053074C0E5F8E4ADB3B7180 /* RSScreenPropertyBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSScreenPropertyBuilder.h; path = Sources/Classes/Public/RSScreenPropertyBuilder.h; sourceTree = "<group>"; };
+		A15AB3C2E00D970920EB7E18FD0DF3BA /* RSWishListProductAddedToCartEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSWishListProductAddedToCartEvent.m; path = Sources/Classes/Ecomm/Events/RSWishListProductAddedToCartEvent.m; sourceTree = "<group>"; };
+		A3FA376CC4C52522724F4DF2C5257EA9 /* Pods-Stream-Test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stream-Test-dummy.m"; sourceTree = "<group>"; };
+		A416104FFB4A3AB54EE3DC14073A96F6 /* RSConfigBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSConfigBuilder.h; path = Sources/Classes/Public/RSConfigBuilder.h; sourceTree = "<group>"; };
+		A497C9D72750864B3CC81F825715CD61 /* Pods-Stream-Test-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Stream-Test-frameworks.sh"; sourceTree = "<group>"; };
+		A679C9BAA5D928219AB7BD8DE59B1324 /* RSTraitsBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSTraitsBuilder.m; path = Sources/Classes/RSTraitsBuilder.m; sourceTree = "<group>"; };
+		A751E82D6E36568E82BF5F6D313E9E80 /* Rudder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rudder-dummy.m"; sourceTree = "<group>"; };
+		A8B6FE0229F4C84DEE063F6A95680C50 /* RSECommerceParamNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceParamNames.m; path = Sources/Classes/Ecomm/RSECommerceParamNames.m; sourceTree = "<group>"; };
+		AC7459AC868074AF9CDE9420282E2579 /* RSProductReviewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductReviewedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductReviewedEvent.m; sourceTree = "<group>"; };
+		AD79A1068CBC11127C7D542C56E66F85 /* Pods-Stream-Test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Stream-Test.modulemap"; sourceTree = "<group>"; };
+		AD800F2676FD2BC454AB3EF1C07DEC99 /* RSContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSContext.h; path = Sources/Classes/Public/RSContext.h; sourceTree = "<group>"; };
+		AE1546CA528A6F0D3B41C5642DF580E7 /* RSDBMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDBMessage.m; path = Sources/Classes/RSDBMessage.m; sourceTree = "<group>"; };
+		B06AA0A02B8693B4AE7FBDD80E259A98 /* RSServerDestination.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerDestination.h; path = Sources/Classes/Public/RSServerDestination.h; sourceTree = "<group>"; };
+		B299B7D8B79EA6388944E700F5201898 /* RSServerConfigSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerConfigSource.m; path = Sources/Classes/RSServerConfigSource.m; sourceTree = "<group>"; };
+		B2ECF24A5A6E5559156872402FA7BE64 /* RSProductViewedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductViewedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductViewedEvent.m; sourceTree = "<group>"; };
+		B3976F5F80A330D8FEB218B42E2889F8 /* Pods-Stream-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream-Test.release.xcconfig"; sourceTree = "<group>"; };
+		B5BAAC277D77D6E5C56EE2F277C6B7EA /* RSECommerceWishListBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceWishListBuilder.h; path = Sources/Classes/Public/RSECommerceWishListBuilder.h; sourceTree = "<group>"; };
+		B7E7BA3761E4A18E6C3BE55A82F7B9D3 /* RSServerDestinationDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerDestinationDefinition.m; path = Sources/Classes/RSServerDestinationDefinition.m; sourceTree = "<group>"; };
+		B9479316A2F8E0A99D8F3A85F457BA2E /* RSMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSMessage.m; path = Sources/Classes/RSMessage.m; sourceTree = "<group>"; };
+		BA8A1C588AE86271A65EAE640208ABC1 /* RSDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDeviceInfo.h; path = Sources/Classes/Public/RSDeviceInfo.h; sourceTree = "<group>"; };
+		BAD711A86C323D27D164D8D8ACDBAE80 /* Rudder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rudder.h; path = Sources/Classes/Public/Rudder.h; sourceTree = "<group>"; };
+		BB556C51E309080A065349844C78ABE5 /* Rudder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rudder-umbrella.h"; sourceTree = "<group>"; };
+		BB907A427834911A08FED06C7FBFD094 /* RSScreenInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSScreenInfo.m; path = Sources/Classes/RSScreenInfo.m; sourceTree = "<group>"; };
+		BB9829EF1FF774756206E3D8E18AD395 /* RSProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProperty.h; path = Sources/Classes/Public/RSProperty.h; sourceTree = "<group>"; };
+		BBB2970376BFCAF359A3BBEC6A425BE6 /* Pods-Stream Test (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stream Test (macOS)-umbrella.h"; sourceTree = "<group>"; };
+		BDDC115D494AAB58DC0503040E5553D7 /* RSCheckoutStartedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCheckoutStartedEvent.h; path = Sources/Classes/Public/RSCheckoutStartedEvent.h; sourceTree = "<group>"; };
+		BDFCBE48F8364909D3E0FC979CAF4D59 /* RSCheckoutStepViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCheckoutStepViewedEvent.h; path = Sources/Classes/Public/RSCheckoutStepViewedEvent.h; sourceTree = "<group>"; };
+		BE9CC183A8B5B86CDF21F66BD4339FFC /* RSProductAddedToWishListEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductAddedToWishListEvent.m; path = Sources/Classes/Ecomm/Events/RSProductAddedToWishListEvent.m; sourceTree = "<group>"; };
+		C07BB9F27759D92EEB3C758A4E73C9BA /* RSServerDestination.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerDestination.m; path = Sources/Classes/RSServerDestination.m; sourceTree = "<group>"; };
+		C12FCF61582BAAF3B41BB441FAFEADF2 /* RSServerConfigManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSServerConfigManager.m; path = Sources/Classes/RSServerConfigManager.m; sourceTree = "<group>"; };
+		C2462FF70EF2E33471108D3A86A7C67F /* RSServerDestinationDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerDestinationDefinition.h; path = Sources/Classes/Public/RSServerDestinationDefinition.h; sourceTree = "<group>"; };
+		C2E03561C218A70530AE9C0E61FF2E57 /* RSPreferenceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSPreferenceManager.m; path = Sources/Classes/RSPreferenceManager.m; sourceTree = "<group>"; };
+		C5831307E4E993B1306A2A49F018AFBD /* Pods-Stream-TestTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Stream-TestTests.modulemap"; sourceTree = "<group>"; };
+		C602DF81C879B2557100DD2C2A3E5DF0 /* RSECommerceSortBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceSortBuilder.m; path = Sources/Classes/Ecomm/RSECommerceSortBuilder.m; sourceTree = "<group>"; };
+		C67D0FA24677D8075FDBF613FF4281DE /* Pods-Stream Test (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream Test (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6C51927F6C949A80A4B1932377847EC /* RSECommerceFilterBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceFilterBuilder.h; path = Sources/Classes/Public/RSECommerceFilterBuilder.h; sourceTree = "<group>"; };
+		C7C5ECF01937571765DD35D4B474F918 /* RSProductClickedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductClickedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductClickedEvent.m; sourceTree = "<group>"; };
+		C823CA04942B835AA93BE776DD6F0887 /* RSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSClient.h; path = Sources/Classes/Public/RSClient.h; sourceTree = "<group>"; };
+		C829C93EACD6FFF6A510F3F645022D53 /* RSProductClickedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductClickedEvent.h; path = Sources/Classes/Public/RSProductClickedEvent.h; sourceTree = "<group>"; };
+		C9B88B0AC6FC575FD1D0C9D2F13D541B /* RSECommerceSort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceSort.h; path = Sources/Classes/Public/RSECommerceSort.h; sourceTree = "<group>"; };
+		CA823023ACCCB62CDAEB0D5BA2D0E54C /* RSECommerceCart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCart.h; path = Sources/Classes/Public/RSECommerceCart.h; sourceTree = "<group>"; };
+		CBA7AB3183FBD07C31461FD8E8D6A86E /* Pods-Stream-Test-Stream-TestUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Stream-Test-Stream-TestUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBFA88DB3ABE3C1ECA7BB461E6BC4D80 /* RSECommerceFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceFilter.h; path = Sources/Classes/Public/RSECommerceFilter.h; sourceTree = "<group>"; };
+		D12B62E98DD31FF06DA870B031B68917 /* Pods-Stream-Test-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream-Test-acknowledgements.plist"; sourceTree = "<group>"; };
+		D1CC848328B7E2797ECBCACCEFA709FE /* RSMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSMessage.h; path = Sources/Classes/Public/RSMessage.h; sourceTree = "<group>"; };
+		D285BC6FEC7977D3B4236A3EB106669D /* RSECommerceParamNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceParamNames.h; path = Sources/Classes/Public/RSECommerceParamNames.h; sourceTree = "<group>"; };
+		D3840F9E88AB0D0190DB50C6858C986B /* Pods-Stream-Test-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream-Test-Info.plist"; sourceTree = "<group>"; };
+		D52957FA050F74B3D9DAE862C2A9C254 /* RSECommerceOrderBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceOrderBuilder.h; path = Sources/Classes/Public/RSECommerceOrderBuilder.h; sourceTree = "<group>"; };
+		D6C07135389CB4E6CF5EDFB4750F04C2 /* RSOrderRefundedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSOrderRefundedEvent.h; path = Sources/Classes/Public/RSOrderRefundedEvent.h; sourceTree = "<group>"; };
+		D7C66B793E75113C82295FACA59EDBF9 /* RSECommerceCheckoutBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCheckoutBuilder.h; path = Sources/Classes/Public/RSECommerceCheckoutBuilder.h; sourceTree = "<group>"; };
+		D897CBFF7177DD8175D9DC0BBB0FF1F7 /* RSProductRemovedFromWishListEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductRemovedFromWishListEvent.m; path = Sources/Classes/Ecomm/Events/RSProductRemovedFromWishListEvent.m; sourceTree = "<group>"; };
+		DA5B6E40AABA8CB94567BA43CBDA4958 /* RSConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSConfig.h; path = Sources/Classes/Public/RSConfig.h; sourceTree = "<group>"; };
+		DBBA48CACF9AF0E19219C1EAC5155CE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DBC91CA070468041342A9A219E37716B /* RSCouponDeniedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCouponDeniedEvent.m; path = Sources/Classes/Ecomm/Events/RSCouponDeniedEvent.m; sourceTree = "<group>"; };
+		DD3419B95C823C0BA63E719C45EF6263 /* UIViewController+RSScreen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RSScreen.h"; path = "Sources/Classes/Public/UIViewController+RSScreen.h"; sourceTree = "<group>"; };
+		DF1CCA7CAFCFA48F536ECDD395CAF8A5 /* RSProductAddedToCartEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductAddedToCartEvent.h; path = Sources/Classes/Public/RSProductAddedToCartEvent.h; sourceTree = "<group>"; };
+		E01413F6D101E2A46F9C21F022FDD001 /* RSMessageBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSMessageBuilder.h; path = Sources/Classes/Public/RSMessageBuilder.h; sourceTree = "<group>"; };
+		E2E02FA6E5DAA27AEDF79F0C65D06201 /* UIViewController+RSScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RSScreen.m"; path = "Sources/Classes/UIViewController+RSScreen.m"; sourceTree = "<group>"; };
+		E362D0F638733D81CC02F86DEC3E82C1 /* RSServerConfigManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSServerConfigManager.h; path = Sources/Classes/Public/RSServerConfigManager.h; sourceTree = "<group>"; };
+		E4625E9ED4AA8DB0B31F97DAA1E6254E /* RSProductSearchedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSProductSearchedEvent.m; path = Sources/Classes/Ecomm/Events/RSProductSearchedEvent.m; sourceTree = "<group>"; };
+		E52CF3FBD96AC161EC6349EA3CDE93B1 /* RSOSInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOSInfo.m; path = Sources/Classes/RSOSInfo.m; sourceTree = "<group>"; };
+		E5ECB28181C976E226CC01BF3F6D7BB3 /* RSECommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommercePromotion.h; path = Sources/Classes/Public/RSECommercePromotion.h; sourceTree = "<group>"; };
+		E8901A4E6975AB7284B698F57E17D0F2 /* RSScreenPropertyBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSScreenPropertyBuilder.m; path = Sources/Classes/RSScreenPropertyBuilder.m; sourceTree = "<group>"; };
+		E9C42ADED66342DCB961B1AB4FA39FE1 /* RSOrderCancelledEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSOrderCancelledEvent.m; path = Sources/Classes/Ecomm/Events/RSOrderCancelledEvent.m; sourceTree = "<group>"; };
+		EADBC189BFB09D4747A0071D49C74A78 /* RSTrackPropertyBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSTrackPropertyBuilder.m; path = Sources/Classes/RSTrackPropertyBuilder.m; sourceTree = "<group>"; };
+		EADBDCFABCD3482105A8FA311AC39D91 /* Pods-Stream Test (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stream Test (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		EB09FF1D2CDAA9F02ADCC3B9A9DD354F /* Pods-Stream-Test-Stream-TestUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stream-Test-Stream-TestUITests-dummy.m"; sourceTree = "<group>"; };
+		EC1F33520A69AB6C34678CD69B0E2ADD /* RSProductRemovedFromWishListEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductRemovedFromWishListEvent.h; path = Sources/Classes/Public/RSProductRemovedFromWishListEvent.h; sourceTree = "<group>"; };
+		EC221F841DDF4F0585ADCB52FFC5944B /* RSECommerceCouponBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceCouponBuilder.h; path = Sources/Classes/Public/RSECommerceCouponBuilder.h; sourceTree = "<group>"; };
+		EC846EE8772585668C0AD42ADB4FB433 /* RSProductListViewedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSProductListViewedEvent.h; path = Sources/Classes/Public/RSProductListViewedEvent.h; sourceTree = "<group>"; };
+		ED7F987D0AB00F5381402F28B87DACD1 /* Pods-Stream Test (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream Test (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		EE58B2ACFEE1811EF479AAE65021F9C3 /* Pods-Stream-Test-Stream-TestUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Stream-Test-Stream-TestUITests-umbrella.h"; sourceTree = "<group>"; };
+		EE92C9D45C53ABE0613087CB327F0B3C /* RSCartSharedEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSCartSharedEvent.h; path = Sources/Classes/Public/RSCartSharedEvent.h; sourceTree = "<group>"; };
+		EF95369BAD32483A09D971614335D041 /* Pods-Stream-TestTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Stream-TestTests"; path = Pods_Stream_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08E121D07C50D421CB673C3EB8963FD /* RSECommerceCart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceCart.m; path = Sources/Classes/Ecomm/RSECommerceCart.m; sourceTree = "<group>"; };
+		F10D7FFEFF0B406D074D8AC08FAFFB3E /* RSECommerceProduct.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceProduct.m; path = Sources/Classes/Ecomm/RSECommerceProduct.m; sourceTree = "<group>"; };
+		F28E09F6AAB743B5EDC32044C5BB8599 /* Pods-Stream Test (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stream Test (macOS)-dummy.m"; sourceTree = "<group>"; };
+		F3956C9C08809027A4B28C64D6F6E183 /* RSECommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSECommerceProduct.h; path = Sources/Classes/Public/RSECommerceProduct.h; sourceTree = "<group>"; };
+		F75AD21D817C917009688B0039F2FDC2 /* RSPreferenceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSPreferenceManager.h; path = Sources/Classes/Public/RSPreferenceManager.h; sourceTree = "<group>"; };
+		F84C2571FC21638E46E62BCE6652469D /* Pods-Stream-TestTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Stream-TestTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8B16880999643067185758F91DB0AF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FB090FEF855DFA48B993DBBF41379DC2 /* Pods-Stream-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Stream-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		FE50F7668A0705E38FEC27EEF2BF88E6 /* RSCheckoutStartedEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSCheckoutStartedEvent.m; path = Sources/Classes/Ecomm/Events/RSCheckoutStartedEvent.m; sourceTree = "<group>"; };
+		FED1F82A5120E2538A6684C5AF00B64E /* RSECommerceProductBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSECommerceProductBuilder.m; path = Sources/Classes/Ecomm/RSECommerceProductBuilder.m; sourceTree = "<group>"; };
+		FF150C1E27A6BE0587696EFC069005B0 /* Pods-Stream Test (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Stream Test (iOS)-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BAC0734641A550F3D83522665F4177C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EC151FB95E0EDF8149D0157C978FE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657A54DD9B5E6EB06F3DF282800F7A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63498834FA7063B0399601AEBBF20237 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1581F9180CBC65B6C05FF40DFA73D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D1151705409D25AE87FC5CFEF1365D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD26907F95E2C539D85C73EB88BAC55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8705CDE73A812FE57DA3BAAFB1F3686 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA5980372D20A2171AD5F13308967DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DA5F354D4945CC75737BD7CA2518E2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F187CCD11079E499C715EFEF1A19C4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E572374E251D6C744BBAFDB1B84F9D90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		194666F33174C43107D68503A8D16659 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				76603492F62D69443C2C76B80801E696 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		1F48D79FAD0101B81739DA7543B8B1BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A43AA226F281A5F564A960AE0ECCEA6E /* Rudder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2149F26AD55F4586EB71BEEE3AB476F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CE95DC41DE4D74D3D35D4FB0F23C9A7 /* Pods-Stream Test (iOS) */,
+				3509D50980F1E6BA8A2E9C74F64E8E33 /* Pods_Stream_Test__macOS_.framework */,
+				40BEE9590D2BE4E88E4657E50602CEEC /* Pods-Stream-Test */,
+				1CCF328A0285909E381035AC25E8D660 /* Pods-Stream-Test-Stream-TestUITests */,
+				EF95369BAD32483A09D971614335D041 /* Pods-Stream-TestTests */,
+				0EBB432EA825E0B031D4B798B0A53B0C /* Rudder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27EA2403DBC4151CBCFA263568178F74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09D2008696763C8CE800D5EFC0A4070C /* Rudder.modulemap */,
+				A751E82D6E36568E82BF5F6D313E9E80 /* Rudder-dummy.m */,
+				8884D9872BC80C67C5CD955AFBEABDE2 /* Rudder-Info.plist */,
+				4A3646706435DFCFF71624F374FD8213 /* Rudder-prefix.pch */,
+				BB556C51E309080A065349844C78ABE5 /* Rudder-umbrella.h */,
+				92D4E735A8B5DEBA00A8B9E283CB8C1F /* Rudder.debug.xcconfig */,
+				73D51AA0A5E04A949C06F0CE58A892D6 /* Rudder.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Rudder";
+			sourceTree = "<group>";
+		};
+		44E0A5F14C9445B8D0DAD393F840264D /* Pods-Stream Test (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F4AF420633159B966D850442F144F /* Pods-Stream Test (macOS).modulemap */,
+				168896208E9358A4B015C22D538BC60A /* Pods-Stream Test (macOS)-acknowledgements.markdown */,
+				C67D0FA24677D8075FDBF613FF4281DE /* Pods-Stream Test (macOS)-acknowledgements.plist */,
+				F28E09F6AAB743B5EDC32044C5BB8599 /* Pods-Stream Test (macOS)-dummy.m */,
+				48857619DD54DBE24C48E717EB04DDC8 /* Pods-Stream Test (macOS)-Info.plist */,
+				BBB2970376BFCAF359A3BBEC6A425BE6 /* Pods-Stream Test (macOS)-umbrella.h */,
+				26E6AE13688FC0398705C7DD0FBBF5B7 /* Pods-Stream Test (macOS).debug.xcconfig */,
+				267998BCA54C07D426604C5D95E8EE2C /* Pods-Stream Test (macOS).release.xcconfig */,
+			);
+			name = "Pods-Stream Test (macOS)";
+			path = "Target Support Files/Pods-Stream Test (macOS)";
+			sourceTree = "<group>";
+		};
+		5424F52321FD082BEDDB9BD5B2C17D1D /* Pods-Stream-TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5831307E4E993B1306A2A49F018AFBD /* Pods-Stream-TestTests.modulemap */,
+				5D74792EE58B8F9E9645F411B5CAA6A5 /* Pods-Stream-TestTests-acknowledgements.markdown */,
+				F84C2571FC21638E46E62BCE6652469D /* Pods-Stream-TestTests-acknowledgements.plist */,
+				7A99E1714DF91F19A3824142E8FA86AF /* Pods-Stream-TestTests-dummy.m */,
+				24F48DC8F775602589393FD79207AAF0 /* Pods-Stream-TestTests-Info.plist */,
+				1354FE126B46B27D1071AAF1C58BC11D /* Pods-Stream-TestTests-umbrella.h */,
+				22177C9E06F17F6A3DF1CAC5DFA0EDDD /* Pods-Stream-TestTests.debug.xcconfig */,
+				2C9412D8776CB45A339D3378CD2FD6C3 /* Pods-Stream-TestTests.release.xcconfig */,
+			);
+			name = "Pods-Stream-TestTests";
+			path = "Target Support Files/Pods-Stream-TestTests";
+			sourceTree = "<group>";
+		};
+		72AA265A3847A2D9BFDDB607853C4395 /* Pods-Stream-Test */ = {
+			isa = PBXGroup;
+			children = (
+				AD79A1068CBC11127C7D542C56E66F85 /* Pods-Stream-Test.modulemap */,
+				23CCA0B81292DBDA935BE664B1176035 /* Pods-Stream-Test-acknowledgements.markdown */,
+				D12B62E98DD31FF06DA870B031B68917 /* Pods-Stream-Test-acknowledgements.plist */,
+				A3FA376CC4C52522724F4DF2C5257EA9 /* Pods-Stream-Test-dummy.m */,
+				A497C9D72750864B3CC81F825715CD61 /* Pods-Stream-Test-frameworks.sh */,
+				D3840F9E88AB0D0190DB50C6858C986B /* Pods-Stream-Test-Info.plist */,
+				97F421500A741380D6310A21DF50D37F /* Pods-Stream-Test-umbrella.h */,
+				FB090FEF855DFA48B993DBBF41379DC2 /* Pods-Stream-Test.debug.xcconfig */,
+				B3976F5F80A330D8FEB218B42E2889F8 /* Pods-Stream-Test.release.xcconfig */,
+			);
+			name = "Pods-Stream-Test";
+			path = "Target Support Files/Pods-Stream-Test";
+			sourceTree = "<group>";
+		};
+		88EAE0A72B6142EC06CAAA2D98728D7B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F8B16880999643067185758F91DB0AF4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B44626E7355F7C58C74966A02C75D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88EAE0A72B6142EC06CAAA2D98728D7B /* iOS */,
+				194666F33174C43107D68503A8D16659 /* OS X */,
+				F2EA93CBF6396FB897D375681BD90E9F /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DB27BA07D7D46F7B5BB5BAAAD87681B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4391C97DF475F7F05E4E0DC7DA91523 /* Pods-Stream Test (iOS) */,
+				44E0A5F14C9445B8D0DAD393F840264D /* Pods-Stream Test (macOS) */,
+				72AA265A3847A2D9BFDDB607853C4395 /* Pods-Stream-Test */,
+				F10C9FBBDFAB55722718AD9D54442531 /* Pods-Stream-Test-Stream-TestUITests */,
+				5424F52321FD082BEDDB9BD5B2C17D1D /* Pods-Stream-TestTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A43AA226F281A5F564A960AE0ECCEA6E /* Rudder */ = {
+			isa = PBXGroup;
+			children = (
+				4CD35B18D483770339F6AC996D53721F /* RSApp.h */,
+				55CF6F5AB6C874D2AD1FCCDF3EB9ABBB /* RSApp.m */,
+				EE92C9D45C53ABE0613087CB327F0B3C /* RSCartSharedEvent.h */,
+				89479DC5824ED5AC082441E1D0991A1F /* RSCartSharedEvent.m */,
+				839E5BF5F422C655C47F5D0B754AB70D /* RSCartViewedEvent.h */,
+				5B0E532DAF6BAD761DB4A06195BFA27F /* RSCartViewedEvent.m */,
+				BDDC115D494AAB58DC0503040E5553D7 /* RSCheckoutStartedEvent.h */,
+				FE50F7668A0705E38FEC27EEF2BF88E6 /* RSCheckoutStartedEvent.m */,
+				377ECE4E052AAC29376AB4349F835282 /* RSCheckoutStepCompletedEvent.h */,
+				214598E9D94D313788D75069B5A5FE2E /* RSCheckoutStepCompletedEvent.m */,
+				BDFCBE48F8364909D3E0FC979CAF4D59 /* RSCheckoutStepViewedEvent.h */,
+				63C221C843311FC464AB0D8C0B09E6CD /* RSCheckoutStepViewedEvent.m */,
+				C823CA04942B835AA93BE776DD6F0887 /* RSClient.h */,
+				7856EF0850A859110A07856274401096 /* RSClient.m */,
+				DA5B6E40AABA8CB94567BA43CBDA4958 /* RSConfig.h */,
+				4D2F5ADC8A4FD5F198E485BB4FC50FD6 /* RSConfig.m */,
+				A416104FFB4A3AB54EE3DC14073A96F6 /* RSConfigBuilder.h */,
+				2B88EA54BBF037664F74D8AEA9170561 /* RSConfigBuilder.m */,
+				1BE8B9738972EBF5972830C664978DDF /* RSConstants.h */,
+				3C0EEBFE6336AE7F82FCCECA5B84EA28 /* RSConstants.m */,
+				AD800F2676FD2BC454AB3EF1C07DEC99 /* RSContext.h */,
+				8704C3274B9EA308E89006D8A989F5F3 /* RSContext.m */,
+				348C6729C4402D2EF01B5DDBE96A1064 /* RSCouponAppliedEvent.h */,
+				4B5F0A527B31D669EC6E22FE7FEA99A9 /* RSCouponAppliedEvent.m */,
+				7B974246D560577C91AF0FBF3F11D43E /* RSCouponDeniedEvent.h */,
+				DBC91CA070468041342A9A219E37716B /* RSCouponDeniedEvent.m */,
+				545323C84F25772C9763C9467401685A /* RSCouponEnteredEvent.h */,
+				81711AB09433B0837A90FD6267C75BEA /* RSCouponEnteredEvent.m */,
+				0F1D764D36224E4AD1A0CF875D2BF783 /* RSCouponRemovedEvent.h */,
+				3B4A4239C101AF2F04F50CC34CD02E99 /* RSCouponRemovedEvent.m */,
+				4E3AF7A6AAABF5409FEDA66316558F48 /* RSDBMessage.h */,
+				AE1546CA528A6F0D3B41C5642DF580E7 /* RSDBMessage.m */,
+				36F7BCF69597F41F733ABD8F1B3FDB39 /* RSDBPersistentManager.h */,
+				88F0C741BC70E95E7C5B06E08A8A037C /* RSDBPersistentManager.m */,
+				BA8A1C588AE86271A65EAE640208ABC1 /* RSDeviceInfo.h */,
+				66642E4E47A796D26AF3A061DE9C7A1D /* RSDeviceInfo.m */,
+				CA823023ACCCB62CDAEB0D5BA2D0E54C /* RSECommerceCart.h */,
+				F08E121D07C50D421CB673C3EB8963FD /* RSECommerceCart.m */,
+				20C86FB84A314769515ED76EC79925D6 /* RSECommerceCartBuilder.h */,
+				9E8FCE3D1C2B8EB283E24E3C411DD68D /* RSECommerceCartBuilder.m */,
+				4F5DB44D05799E7A723DF96AFFA8FC6F /* RSECommerceCheckout.h */,
+				08DF8FF0A5714C3C9B3E6FA827704471 /* RSECommerceCheckout.m */,
+				D7C66B793E75113C82295FACA59EDBF9 /* RSECommerceCheckoutBuilder.h */,
+				2CF1FA99434F28708A1D3D53EF9D38A9 /* RSECommerceCheckoutBuilder.m */,
+				0E39520C67308B141270BDB2A934DCC4 /* RSECommerceCoupon.h */,
+				2EA96164C75A2BBDAD15C4DB3633719C /* RSECommerceCoupon.m */,
+				EC221F841DDF4F0585ADCB52FFC5944B /* RSECommerceCouponBuilder.h */,
+				97699E088FA3D3D40CAEF41880C3BA1B /* RSECommerceCouponBuilder.m */,
+				68E81146B7F6E280964A43B34386D218 /* RSECommerceEvents.h */,
+				029F6A701B669C7A85241AF33F290DBE /* RSECommerceEvents.m */,
+				CBFA88DB3ABE3C1ECA7BB461E6BC4D80 /* RSECommerceFilter.h */,
+				0FB988A7878D50235CD63FE7FD1D56EA /* RSECommerceFilter.m */,
+				C6C51927F6C949A80A4B1932377847EC /* RSECommerceFilterBuilder.h */,
+				4C5B0EE6F036A450C7A0A2C253A44435 /* RSECommerceFilterBuilder.m */,
+				8EAEC00A94F496E5E0E8C231FC58DD13 /* RSECommerceOrder.h */,
+				17B219F3FAE8885DA3A264C368E51452 /* RSECommerceOrder.m */,
+				D52957FA050F74B3D9DAE862C2A9C254 /* RSECommerceOrderBuilder.h */,
+				12BBF0E63213E06E59694D988B928677 /* RSECommerceOrderBuilder.m */,
+				D285BC6FEC7977D3B4236A3EB106669D /* RSECommerceParamNames.h */,
+				A8B6FE0229F4C84DEE063F6A95680C50 /* RSECommerceParamNames.m */,
+				F3956C9C08809027A4B28C64D6F6E183 /* RSECommerceProduct.h */,
+				F10D7FFEFF0B406D074D8AC08FAFFB3E /* RSECommerceProduct.m */,
+				00556B6090468D9EF2EAC4FF79ED45B8 /* RSECommerceProductBuilder.h */,
+				FED1F82A5120E2538A6684C5AF00B64E /* RSECommerceProductBuilder.m */,
+				E5ECB28181C976E226CC01BF3F6D7BB3 /* RSECommercePromotion.h */,
+				9C5EDCD5AC49736EE715EDD732B78C37 /* RSECommercePromotion.m */,
+				54DEF1030233B3826B5BF345B8E34F52 /* RSECommercePromotionBuilder.h */,
+				653DA9BCD938E1BE7EB4733F14374321 /* RSECommercePromotionBuilder.m */,
+				C9B88B0AC6FC575FD1D0C9D2F13D541B /* RSECommerceSort.h */,
+				7ACFACB8852998BE089B35239E5D83D0 /* RSECommerceSort.m */,
+				7C3CB94513E5F1DE642342FA68099C06 /* RSECommerceSortBuilder.h */,
+				C602DF81C879B2557100DD2C2A3E5DF0 /* RSECommerceSortBuilder.m */,
+				0BD5C127EE16095F088C84C6483E5766 /* RSECommerceWishList.h */,
+				8D0C42A1EB1B4400CD5B9F8BBA5511BF /* RSECommerceWishList.m */,
+				B5BAAC277D77D6E5C56EE2F277C6B7EA /* RSECommerceWishListBuilder.h */,
+				64736161C6B18EB488864132946C069A /* RSECommerceWishListBuilder.m */,
+				218CB99CD475E89EE725543B9F673C08 /* RSElementCache.h */,
+				5C31C1FE74B4BB369B16CE98133E251C /* RSElementCache.m */,
+				47521D9D4987646C73BD3798AF84D4DF /* RSEventRepository.h */,
+				7C707A0CDF07B9258DDC1D2A421C3FB9 /* RSEventRepository.m */,
+				50A94893CC642A1CE6744A9193E95B22 /* RSIntegration.h */,
+				4281EA7FFD02447C0DB48AB5B10BE580 /* RSIntegrationFactory.h */,
+				583BB8F4DAD324A5B8ACD3B538335231 /* RSLibraryInfo.h */,
+				809DA3BB3DC205603D75BEAAF9786B67 /* RSLibraryInfo.m */,
+				3D7A4D4DDD79337DDFDBE3488446231E /* RSLogger.h */,
+				65EB64DCB7E47F69664CA37BE0043E04 /* RSLogger.m */,
+				D1CC848328B7E2797ECBCACCEFA709FE /* RSMessage.h */,
+				B9479316A2F8E0A99D8F3A85F457BA2E /* RSMessage.m */,
+				E01413F6D101E2A46F9C21F022FDD001 /* RSMessageBuilder.h */,
+				8DDE7F7FA82A664EC77216B0B93A383F /* RSMessageBuilder.m */,
+				82FDAD27A4B25BBABA08E6E686A49236 /* RSMessageType.h */,
+				93E7ADAFFCFFBA3074D20CEF672E0471 /* RSMessageType.m */,
+				3BE9321C73A9DF447F15026A2F96637B /* RSNetwork.h */,
+				5649593E174F24DDA9E8E655A0D254DE /* RSNetwork.m */,
+				529C4A7F979C88C7214FDB5E212D65B2 /* RSOption.h */,
+				2C7E6CF8AFA4515CDB46246E6AFABE90 /* RSOption.m */,
+				8ADCB0C6DAB3C130D7F11041A508AA3F /* RSOrderCancelledEvent.h */,
+				E9C42ADED66342DCB961B1AB4FA39FE1 /* RSOrderCancelledEvent.m */,
+				72045D5F228182B59C387BD7A4643206 /* RSOrderCompletedEvent.h */,
+				4632B55B57A8265EC42E4B6F27A92DCE /* RSOrderCompletedEvent.m */,
+				D6C07135389CB4E6CF5EDFB4750F04C2 /* RSOrderRefundedEvent.h */,
+				44BF3A2E2893B6044F86A49F70279F39 /* RSOrderRefundedEvent.m */,
+				81E23AED5BDCBA7F47174BA496388CAA /* RSOrderUpdatedEvent.h */,
+				6A9C32E56FC475B64E616D73F3E32B06 /* RSOrderUpdatedEvent.m */,
+				71178B8DACD0DB293A8E84FDBEE6BC15 /* RSOSInfo.h */,
+				E52CF3FBD96AC161EC6349EA3CDE93B1 /* RSOSInfo.m */,
+				04E78F621912651DE221F8BDD7DFB58B /* RSPagePropertyBuilder.h */,
+				9D366ACB6CAE7DC99CCC500DBEDD4BD3 /* RSPagePropertyBuilder.m */,
+				0F8F80E0413B10EEA095DD1A0B032E2D /* RSPaymentInfoEnteredEvent.h */,
+				5BACBF475A198394713FA6974FDAB2AF /* RSPaymentInfoEnteredEvent.m */,
+				F75AD21D817C917009688B0039F2FDC2 /* RSPreferenceManager.h */,
+				C2E03561C218A70530AE9C0E61FF2E57 /* RSPreferenceManager.m */,
+				DF1CCA7CAFCFA48F536ECDD395CAF8A5 /* RSProductAddedToCartEvent.h */,
+				8FA66E18AEFE6A2358D04147D18A6FC4 /* RSProductAddedToCartEvent.m */,
+				000E47DE14DB5899C743C64FD749A030 /* RSProductAddedToWishListEvent.h */,
+				BE9CC183A8B5B86CDF21F66BD4339FFC /* RSProductAddedToWishListEvent.m */,
+				C829C93EACD6FFF6A510F3F645022D53 /* RSProductClickedEvent.h */,
+				C7C5ECF01937571765DD35D4B474F918 /* RSProductClickedEvent.m */,
+				471B2655E6B351EA3B5F6571D5201113 /* RSProductListFilteredEvent.h */,
+				8F2B285A9B99F97BF08A2D806ECFADFC /* RSProductListFilteredEvent.m */,
+				EC846EE8772585668C0AD42ADB4FB433 /* RSProductListViewedEvent.h */,
+				09BE4E8A9A458ABFCE2062796D63D3DF /* RSProductListViewedEvent.m */,
+				501DF9332319EE742121098F5504F000 /* RSProductRemovedEvent.h */,
+				48E28672C4B56EC2ED8A3BAD3C9C912C /* RSProductRemovedEvent.m */,
+				EC1F33520A69AB6C34678CD69B0E2ADD /* RSProductRemovedFromWishListEvent.h */,
+				D897CBFF7177DD8175D9DC0BBB0FF1F7 /* RSProductRemovedFromWishListEvent.m */,
+				30480A056B48FEE64B8BBEADB680075E /* RSProductReviewedEvent.h */,
+				AC7459AC868074AF9CDE9420282E2579 /* RSProductReviewedEvent.m */,
+				300CD956016308AEB8311AB72DEC75D3 /* RSProductSearchedEvent.h */,
+				E4625E9ED4AA8DB0B31F97DAA1E6254E /* RSProductSearchedEvent.m */,
+				9127D6EDE2078E6BDE8B3EF834420FFC /* RSProductSharedEvent.h */,
+				1CA8C7D8E6FDF5841B44DF75011D111D /* RSProductSharedEvent.m */,
+				43F07D77814538E33025B07BBF155796 /* RSProductViewedEvent.h */,
+				B2ECF24A5A6E5559156872402FA7BE64 /* RSProductViewedEvent.m */,
+				870B3FAEF05CBEA069251BB548F5B3DE /* RSPromotionClickedEvent.h */,
+				2B1FEFBB6C3F12BE82C35777A3072606 /* RSPromotionClickedEvent.m */,
+				017AB324D808F8897239377704404595 /* RSPromotionViewedEvent.h */,
+				184306DD1080D79890514815FBC81B0B /* RSPromotionViewedEvent.m */,
+				BB9829EF1FF774756206E3D8E18AD395 /* RSProperty.h */,
+				88D26A4C357CFB758588F1EE9A7F1902 /* RSProperty.m */,
+				4929061AA9AB720CED6C328803A13926 /* RSScreenInfo.h */,
+				BB907A427834911A08FED06C7FBFD094 /* RSScreenInfo.m */,
+				A0AAF59A5053074C0E5F8E4ADB3B7180 /* RSScreenPropertyBuilder.h */,
+				E8901A4E6975AB7284B698F57E17D0F2 /* RSScreenPropertyBuilder.m */,
+				E362D0F638733D81CC02F86DEC3E82C1 /* RSServerConfigManager.h */,
+				C12FCF61582BAAF3B41BB441FAFEADF2 /* RSServerConfigManager.m */,
+				570362FA1BF7A76E98CE4F161DA676C1 /* RSServerConfigSource.h */,
+				B299B7D8B79EA6388944E700F5201898 /* RSServerConfigSource.m */,
+				B06AA0A02B8693B4AE7FBDD80E259A98 /* RSServerDestination.h */,
+				C07BB9F27759D92EEB3C758A4E73C9BA /* RSServerDestination.m */,
+				C2462FF70EF2E33471108D3A86A7C67F /* RSServerDestinationDefinition.h */,
+				B7E7BA3761E4A18E6C3BE55A82F7B9D3 /* RSServerDestinationDefinition.m */,
+				47B928B076FAA85941A079C699162F6B /* RSTrackPropertyBuilder.h */,
+				EADBC189BFB09D4747A0071D49C74A78 /* RSTrackPropertyBuilder.m */,
+				17648F98A78C0405CAC94552231EBC56 /* RSTraits.h */,
+				7B52E83E3304E2DA341066ECF20867C7 /* RSTraits.m */,
+				9D855B7A013163586F62A684C6672AD7 /* RSTraitsBuilder.h */,
+				A679C9BAA5D928219AB7BD8DE59B1324 /* RSTraitsBuilder.m */,
+				48C549FADCAC5029F4984820F05C31E4 /* RSUtils.h */,
+				8572F856512A8CED68D0A200E4D93CED /* RSUtils.m */,
+				4964070A3234910362E5829CD856FE0D /* RSWishListProductAddedToCartEvent.h */,
+				A15AB3C2E00D970920EB7E18FD0DF3BA /* RSWishListProductAddedToCartEvent.m */,
+				BAD711A86C323D27D164D8D8ACDBAE80 /* Rudder.h */,
+				DD3419B95C823C0BA63E719C45EF6263 /* UIViewController+RSScreen.h */,
+				E2E02FA6E5DAA27AEDF79F0C65D06201 /* UIViewController+RSScreen.m */,
+				04EA8FF2061DF09470C533B38754F09D /* WKInterfaceController+RSScreen.h */,
+				0AC908CF1419005191863D57A076EBC5 /* WKInterfaceController+RSScreen.m */,
+				27EA2403DBC4151CBCFA263568178F74 /* Support Files */,
+			);
+			path = Rudder;
+			sourceTree = "<group>";
+		};
+		C4391C97DF475F7F05E4E0DC7DA91523 /* Pods-Stream Test (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				55ADE8104F492A1491621222613B63D7 /* Pods-Stream Test (iOS).modulemap */,
+				2B2380C20431564B6BD7D73F864D5625 /* Pods-Stream Test (iOS)-acknowledgements.markdown */,
+				5EEDB463F79E1BC0E5EF9BA3A2A3C8AC /* Pods-Stream Test (iOS)-acknowledgements.plist */,
+				FF150C1E27A6BE0587696EFC069005B0 /* Pods-Stream Test (iOS)-dummy.m */,
+				30A82A7CC26406D0D6358883474817DF /* Pods-Stream Test (iOS)-Info.plist */,
+				EADBDCFABCD3482105A8FA311AC39D91 /* Pods-Stream Test (iOS)-umbrella.h */,
+				ED7F987D0AB00F5381402F28B87DACD1 /* Pods-Stream Test (iOS).debug.xcconfig */,
+				32F001871F33373B85BF586DC9BE0C41 /* Pods-Stream Test (iOS).release.xcconfig */,
+			);
+			name = "Pods-Stream Test (iOS)";
+			path = "Target Support Files/Pods-Stream Test (iOS)";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8B44626E7355F7C58C74966A02C75D40 /* Frameworks */,
+				1F48D79FAD0101B81739DA7543B8B1BC /* Pods */,
+				2149F26AD55F4586EB71BEEE3AB476F3 /* Products */,
+				8DB27BA07D7D46F7B5BB5BAAAD87681B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F10C9FBBDFAB55722718AD9D54442531 /* Pods-Stream-Test-Stream-TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DEEA7FE12FDC6D36194B26667D93715 /* Pods-Stream-Test-Stream-TestUITests.modulemap */,
+				CBA7AB3183FBD07C31461FD8E8D6A86E /* Pods-Stream-Test-Stream-TestUITests-acknowledgements.markdown */,
+				56B1F1879869BB533CA626EB406570E0 /* Pods-Stream-Test-Stream-TestUITests-acknowledgements.plist */,
+				EB09FF1D2CDAA9F02ADCC3B9A9DD354F /* Pods-Stream-Test-Stream-TestUITests-dummy.m */,
+				1FAFDEF7877B7C233E2010C05A262026 /* Pods-Stream-Test-Stream-TestUITests-frameworks.sh */,
+				52ED4BF1528C401CD3BA8DBA3CDCCEB4 /* Pods-Stream-Test-Stream-TestUITests-Info.plist */,
+				EE58B2ACFEE1811EF479AAE65021F9C3 /* Pods-Stream-Test-Stream-TestUITests-umbrella.h */,
+				69DA4544D39C600E4791DF28B063DC0B /* Pods-Stream-Test-Stream-TestUITests.debug.xcconfig */,
+				4E07D735A5773974A1D2F58F4B51617F /* Pods-Stream-Test-Stream-TestUITests.release.xcconfig */,
+			);
+			name = "Pods-Stream-Test-Stream-TestUITests";
+			path = "Target Support Files/Pods-Stream-Test-Stream-TestUITests";
+			sourceTree = "<group>";
+		};
+		F2EA93CBF6396FB897D375681BD90E9F /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				DBBA48CACF9AF0E19219C1EAC5155CE9 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EFF461F4FFCEAF3231FD2B698838C7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82423982A73C57AF1CCC1533CAF30647 /* Pods-Stream-Test-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E50697E0A2291C31490D421163194B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979CAE86620B1707E4330FCCBD5F2184 /* Pods-Stream Test (macOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28952236AEBA22E620FAA6EE4A15E01A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4692720636E542C8D37099B5AD28C385 /* Pods-Stream Test (iOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE01CE4CC8C14D3D899691D4DB3582A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5F75A1A91C513F628A0DB1C45052F7 /* Pods-Stream-TestTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618343ED3B2A0DCB2656E8542DD699E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAC53065BCB47FAA27B70D1626E6293 /* Pods-Stream-Test-Stream-TestUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BAC0109863EC6AF37A8C39F1162E5F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0669A0A3542FD50D071C1F95381C83 /* RSApp.h in Headers */,
+				3F3F16C7A3F480E7594B64C242E87B1F /* RSCartSharedEvent.h in Headers */,
+				D6B74BA92CFF34721115530176224EAE /* RSCartViewedEvent.h in Headers */,
+				EBD8D04B4C350C5201D274CDCBF363BC /* RSCheckoutStartedEvent.h in Headers */,
+				30E8836909AB9811E6D9E218C7E0D3C6 /* RSCheckoutStepCompletedEvent.h in Headers */,
+				69BAB9DD3ACFADFF7EF778D9BB497475 /* RSCheckoutStepViewedEvent.h in Headers */,
+				2EF10CA6942FB15844D5BAD490235DA3 /* RSClient.h in Headers */,
+				AFF434329FBF948D82AFA13BF7A1F35F /* RSConfig.h in Headers */,
+				03808B3A989044FCFA8F0181726A7BDD /* RSConfigBuilder.h in Headers */,
+				BFDC4B14046042827CBDD00CC9A4024D /* RSConstants.h in Headers */,
+				1B06C2348ACEC37FE5A4DCAE0A21FF6B /* RSContext.h in Headers */,
+				00EB21564A0D4DCD8B3E97CA7A84E599 /* RSCouponAppliedEvent.h in Headers */,
+				09D9982D5D4398B60C07293DEB2A90C1 /* RSCouponDeniedEvent.h in Headers */,
+				99739E4B7B793623C7062CD5B2C4CB65 /* RSCouponEnteredEvent.h in Headers */,
+				DF6BF1FA117D0CAF371319030F84F2E7 /* RSCouponRemovedEvent.h in Headers */,
+				E6618F23C048E7C5AE9DAEFEF0F2ECDF /* RSDBMessage.h in Headers */,
+				D2E09159BB2DC6575878D8FAF6DEB239 /* RSDBPersistentManager.h in Headers */,
+				535DCED514933FA3D7DD50FABAF3D4C1 /* RSDeviceInfo.h in Headers */,
+				497AB27EA3DE27819560021D3F57DE68 /* RSECommerceCart.h in Headers */,
+				2FBD26622DCB604F2C0E74653500AB25 /* RSECommerceCartBuilder.h in Headers */,
+				1BC5E9AFCFEC86983F33699130707684 /* RSECommerceCheckout.h in Headers */,
+				4CA843AC6B76C0F0A2B91823ACF31418 /* RSECommerceCheckoutBuilder.h in Headers */,
+				64436E137967F775937D971E7538F6A7 /* RSECommerceCoupon.h in Headers */,
+				E047FF584766C2942B9EA348C16F4129 /* RSECommerceCouponBuilder.h in Headers */,
+				A3FC16AD7AFF4F05619420CC03E6708C /* RSECommerceEvents.h in Headers */,
+				EDD40086E517E1A33DE9D6DC75B2E3C4 /* RSECommerceFilter.h in Headers */,
+				17EA4963D3AFA47E1A5DC5ECB7F4E814 /* RSECommerceFilterBuilder.h in Headers */,
+				20704FCAD369FC79576FB36C9B1DB1D8 /* RSECommerceOrder.h in Headers */,
+				7B26D49E9F1B3440BF483C70907CFF07 /* RSECommerceOrderBuilder.h in Headers */,
+				1EF4DC5F0CA55C4E5049E4791FC3494C /* RSECommerceParamNames.h in Headers */,
+				62D8AF27DFB83073A8720BD0528134AD /* RSECommerceProduct.h in Headers */,
+				55A363EF9E98128B6B84421D46655673 /* RSECommerceProductBuilder.h in Headers */,
+				1D30DDF03804130D0464EDBD98E53337 /* RSECommercePromotion.h in Headers */,
+				EB21DC41E12924E4378CDF11C0C9FC14 /* RSECommercePromotionBuilder.h in Headers */,
+				433E4306EF54E3FB1ECB04A7AF16805B /* RSECommerceSort.h in Headers */,
+				488C509E98B3808BA282EAB0BCD62049 /* RSECommerceSortBuilder.h in Headers */,
+				7ABB0008239133E2CA340BAF255033AA /* RSECommerceWishList.h in Headers */,
+				93A6ED01D15CF91DA939D6B00EBCD83F /* RSECommerceWishListBuilder.h in Headers */,
+				3A8E8010DC5DD8D3BE8035A80D27067A /* RSElementCache.h in Headers */,
+				1091E4F192E90DE7B96C991AC746A23D /* RSEventRepository.h in Headers */,
+				0B0FDA5928BD5DD4834C6BF2B4EA91CE /* RSIntegration.h in Headers */,
+				D70C81A83C7F5BA65D81278B14ADA4C3 /* RSIntegrationFactory.h in Headers */,
+				D7E68DA6B785B4CBEDAFB7F099933C5E /* RSLibraryInfo.h in Headers */,
+				B5D81A7AA2AAD130F9A38EEC082CDBC6 /* RSLogger.h in Headers */,
+				C3610666C22B7EB9533F2F9184ADD15E /* RSMessage.h in Headers */,
+				72D26E0671198E7BA05BDE320B4E074C /* RSMessageBuilder.h in Headers */,
+				5F4EFDA13D2818B40B20BDC9189496BA /* RSMessageType.h in Headers */,
+				E5467DF36789AB1FBCFC51D450AE75DC /* RSNetwork.h in Headers */,
+				5DC3FC5D788C61BA90113FEEE8A491F1 /* RSOption.h in Headers */,
+				D9DC108808DF3961EB38EFBFA554AE6B /* RSOrderCancelledEvent.h in Headers */,
+				262CC69E75F4688A3084CF363F87F42D /* RSOrderCompletedEvent.h in Headers */,
+				441DE20F31729006D7E7AB81998CAA5B /* RSOrderRefundedEvent.h in Headers */,
+				4C3C21E1C2B13050FEF8C6FFE527D0A2 /* RSOrderUpdatedEvent.h in Headers */,
+				9F4DD3F18A12C5B7D37D8DF2CCFAAB75 /* RSOSInfo.h in Headers */,
+				B501EBB3A97C2ADE3C5B385EA7A203D1 /* RSPagePropertyBuilder.h in Headers */,
+				5FCA0A90FEB147E100EE113399448275 /* RSPaymentInfoEnteredEvent.h in Headers */,
+				04D6D3A8EC8A1ADDFF30920072D2FAE9 /* RSPreferenceManager.h in Headers */,
+				C3A20F0018E37FAEA8E45E293D24436E /* RSProductAddedToCartEvent.h in Headers */,
+				408EE344DEEFDE6AA71517BA5286B244 /* RSProductAddedToWishListEvent.h in Headers */,
+				689EC8D55B1C91D4EE2B7C7882806628 /* RSProductClickedEvent.h in Headers */,
+				992D451E3E8561AB1187FE6E4A64195A /* RSProductListFilteredEvent.h in Headers */,
+				61DE36CADB7F4F548708F211FEB0FEB5 /* RSProductListViewedEvent.h in Headers */,
+				D45754D360FB22E08780B3ABC6E10AEC /* RSProductRemovedEvent.h in Headers */,
+				5DE5F266F31A735D3DE8A93A5B4FE641 /* RSProductRemovedFromWishListEvent.h in Headers */,
+				3E45E87494588BCAA88EF442316C1662 /* RSProductReviewedEvent.h in Headers */,
+				F899782FFEF4D8DB44B1BC557A13C769 /* RSProductSearchedEvent.h in Headers */,
+				DDE7FD891F02E3DBD1BF96F666973E07 /* RSProductSharedEvent.h in Headers */,
+				40581A71D67AAA1AE696C3C998D9530F /* RSProductViewedEvent.h in Headers */,
+				5B26F86C05261196F3E0DDBC98C405ED /* RSPromotionClickedEvent.h in Headers */,
+				A2551DA8BE933853D42452DED5F23B19 /* RSPromotionViewedEvent.h in Headers */,
+				737D11AE8D92E169FB3EBB4576FF71D9 /* RSProperty.h in Headers */,
+				61AE2D7A3C20EFAD3FD476737A984CD8 /* RSScreenInfo.h in Headers */,
+				4743C99AA512762D784840CEAA066641 /* RSScreenPropertyBuilder.h in Headers */,
+				3D1DBE99E7DAF365CA652BE4065CEC10 /* RSServerConfigManager.h in Headers */,
+				B53BC4A7A0D084DDCEDF82CDF809C29D /* RSServerConfigSource.h in Headers */,
+				7EC6821E89B439D56E8312559815F877 /* RSServerDestination.h in Headers */,
+				292CE3AB1FE57F955E49E8D627DF76F0 /* RSServerDestinationDefinition.h in Headers */,
+				7C13E83E027B139B1B6B331B776F2F99 /* RSTrackPropertyBuilder.h in Headers */,
+				FF92F110E111782F76F0E279805B9678 /* RSTraits.h in Headers */,
+				BF755260A911488DE3FF63A80400A6B5 /* RSTraitsBuilder.h in Headers */,
+				127585B779C4748EACBCEBF4490BF6D4 /* RSUtils.h in Headers */,
+				2B3ABB5AC67C6A7AA338D379421CB76D /* RSWishListProductAddedToCartEvent.h in Headers */,
+				283D134BC6BE68A4546B11F5D1180550 /* Rudder.h in Headers */,
+				C855B44CFDBB2CC8475B1178DAB746F6 /* Rudder-umbrella.h in Headers */,
+				269231C4CF3062983843BA3D5F9F957C /* UIViewController+RSScreen.h in Headers */,
+				AA519C3B413745E15E1CB62DAD68158C /* WKInterfaceController+RSScreen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		302E74E09C05AC0C17F39DF7049DB47B /* Pods-Stream-TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2712B05861C3AC58A7C5AADA53FC0F1D /* Build configuration list for PBXNativeTarget "Pods-Stream-TestTests" */;
+			buildPhases = (
+				2FE01CE4CC8C14D3D899691D4DB3582A /* Headers */,
+				836BECDE8B22B5E1E59EF718F330C2AF /* Sources */,
+				0BAC0734641A550F3D83522665F4177C /* Frameworks */,
+				98BAF3A4C192AFDE8BD763AC634C0A35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DF8E659CBC9DE24965688826D79CE1D /* PBXTargetDependency */,
+			);
+			name = "Pods-Stream-TestTests";
+			productName = Pods_Stream_TestTests;
+			productReference = EF95369BAD32483A09D971614335D041 /* Pods-Stream-TestTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		48C4713D3941B7A426C317E97342ACDD /* Pods-Stream-Test-Stream-TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7F5461DCB3603BECC6817D8E2E3901 /* Build configuration list for PBXNativeTarget "Pods-Stream-Test-Stream-TestUITests" */;
+			buildPhases = (
+				618343ED3B2A0DCB2656E8542DD699E2 /* Headers */,
+				676CC0E91D710CBFB874C00302D011C2 /* Sources */,
+				AD26907F95E2C539D85C73EB88BAC55D /* Frameworks */,
+				38AAA3E403D9B4F5D9BC0EF992479932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B34F24D01C86F57060032C055318D87A /* PBXTargetDependency */,
+			);
+			name = "Pods-Stream-Test-Stream-TestUITests";
+			productName = Pods_Stream_Test_Stream_TestUITests;
+			productReference = 1CCF328A0285909E381035AC25E8D660 /* Pods-Stream-Test-Stream-TestUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA40FB4F6965B7D2827041CED492BA74 /* Pods-Stream Test (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 593CDCB44EC94309D5008263BC5EAE04 /* Build configuration list for PBXNativeTarget "Pods-Stream Test (macOS)" */;
+			buildPhases = (
+				1E50697E0A2291C31490D421163194B2 /* Headers */,
+				FAD23143BCF62CBE55A4989047DEF9AD /* Sources */,
+				BA5980372D20A2171AD5F13308967DF6 /* Frameworks */,
+				E25AF23197ED27DE7124361D8448C805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Stream Test (macOS)";
+			productName = Pods_Stream_Test__macOS_;
+			productReference = 3509D50980F1E6BA8A2E9C74F64E8E33 /* Pods_Stream_Test__macOS_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB138DE4D7C4F54DC5FC09A9B1A5C34F /* Pods-Stream Test (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33E3156551B0460E7F7171CBFA62EDC8 /* Build configuration list for PBXNativeTarget "Pods-Stream Test (iOS)" */;
+			buildPhases = (
+				28952236AEBA22E620FAA6EE4A15E01A /* Headers */,
+				CE66227A150C1EFF07AAA4766BF24933 /* Sources */,
+				657A54DD9B5E6EB06F3DF282800F7A91 /* Frameworks */,
+				82CF03AF1A9B3A48C2DC3765CBFEBBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Stream Test (iOS)";
+			productName = Pods_Stream_Test__iOS_;
+			productReference = 5CE95DC41DE4D74D3D35D4FB0F23C9A7 /* Pods-Stream Test (iOS) */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBAD76862C435D904F1FBB73C43EF7E2 /* Pods-Stream-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C0D9080DAA94A0FFABDD9C39A23BE5 /* Build configuration list for PBXNativeTarget "Pods-Stream-Test" */;
+			buildPhases = (
+				0EFF461F4FFCEAF3231FD2B698838C7C /* Headers */,
+				738EAACD72B49EDB19C73C73ABED7AEF /* Sources */,
+				A1581F9180CBC65B6C05FF40DFA73D96 /* Frameworks */,
+				2812BFE374DDF15935C3128F17C16D48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A09590DAC6843933190062E9E433EF9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Stream-Test";
+			productName = Pods_Stream_Test;
+			productReference = 40BEE9590D2BE4E88E4657E50602CEEC /* Pods-Stream-Test */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5C6323F415EBC1C6BAD0C1E271A0C4D /* Rudder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E7C5FB01822027195555E4F0F1AB2CC /* Build configuration list for PBXNativeTarget "Rudder" */;
+			buildPhases = (
+				9BAC0109863EC6AF37A8C39F1162E5F5 /* Headers */,
+				B7349B5624D21072560097A1FC71F5BE /* Sources */,
+				F187CCD11079E499C715EFEF1A19C4C3 /* Frameworks */,
+				C550524931FCA00A61E9F07BA975C796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rudder;
+			productName = Rudder;
+			productReference = 0EBB432EA825E0B031D4B798B0A53B0C /* Rudder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2149F26AD55F4586EB71BEEE3AB476F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB138DE4D7C4F54DC5FC09A9B1A5C34F /* Pods-Stream Test (iOS) */,
+				AA40FB4F6965B7D2827041CED492BA74 /* Pods-Stream Test (macOS) */,
+				CBAD76862C435D904F1FBB73C43EF7E2 /* Pods-Stream-Test */,
+				48C4713D3941B7A426C317E97342ACDD /* Pods-Stream-Test-Stream-TestUITests */,
+				302E74E09C05AC0C17F39DF7049DB47B /* Pods-Stream-TestTests */,
+				F5C6323F415EBC1C6BAD0C1E271A0C4D /* Rudder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2812BFE374DDF15935C3128F17C16D48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38AAA3E403D9B4F5D9BC0EF992479932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82CF03AF1A9B3A48C2DC3765CBFEBBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98BAF3A4C192AFDE8BD763AC634C0A35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C550524931FCA00A61E9F07BA975C796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25AF23197ED27DE7124361D8448C805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		676CC0E91D710CBFB874C00302D011C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1AD0EFA4A2927DDF9F5FBA7526F27CA /* Pods-Stream-Test-Stream-TestUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		738EAACD72B49EDB19C73C73ABED7AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF4E04C28BE541053175DB4FC5C16EA /* Pods-Stream-Test-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836BECDE8B22B5E1E59EF718F330C2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8593AB9324979A66F29F9103611C98A5 /* Pods-Stream-TestTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7349B5624D21072560097A1FC71F5BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3E6E613CD104894210F2FBB8FA0D30 /* RSApp.m in Sources */,
+				7409ACAC5580ED1E3251158C8AC4283D /* RSCartSharedEvent.m in Sources */,
+				B30D20B0D0E891CE0E84192A06967BAF /* RSCartViewedEvent.m in Sources */,
+				7FDBB1269975C19DF0EB0B36A4054E9A /* RSCheckoutStartedEvent.m in Sources */,
+				342F51AC6EC065F9FBD6CAC0FF78B7E2 /* RSCheckoutStepCompletedEvent.m in Sources */,
+				B2F614ED65D6D59AFC3B845081DF1190 /* RSCheckoutStepViewedEvent.m in Sources */,
+				9570E4B5EDF3BB6134584FE4D078AEE1 /* RSClient.m in Sources */,
+				0233DA4E0549769DCEF6C6D10D265A65 /* RSConfig.m in Sources */,
+				0D16BFCD4F08C959A15BDE4660F226EE /* RSConfigBuilder.m in Sources */,
+				2243794BB33D05182A86C2F517078E35 /* RSConstants.m in Sources */,
+				7DC362194193A155C4B5786A71BB7B0C /* RSContext.m in Sources */,
+				C03A0B65E8985B31EA927C924083B11D /* RSCouponAppliedEvent.m in Sources */,
+				AA3295E614E70B275FBF2724BA566074 /* RSCouponDeniedEvent.m in Sources */,
+				FCC2D84E08850B92FA23DDD93ED1D974 /* RSCouponEnteredEvent.m in Sources */,
+				2AF3593D2AA789A8FACACCFEF45EC7CE /* RSCouponRemovedEvent.m in Sources */,
+				3A59D5E1F31C48D821453F8AE9546454 /* RSDBMessage.m in Sources */,
+				09478163DF186D3486FECA06AF606DEC /* RSDBPersistentManager.m in Sources */,
+				9C02366A6E6AE5B95F73328036202976 /* RSDeviceInfo.m in Sources */,
+				A0FBF3017434B9A8F1EF89452C7DC67D /* RSECommerceCart.m in Sources */,
+				6252D06B315C6564FF00417662962862 /* RSECommerceCartBuilder.m in Sources */,
+				7A7172142F0D652DDEE1AD4BEBA81898 /* RSECommerceCheckout.m in Sources */,
+				78CCC21DBCAFD6B04F283D7AF7A036AE /* RSECommerceCheckoutBuilder.m in Sources */,
+				71EDD4DD9254201511D81F16418E435E /* RSECommerceCoupon.m in Sources */,
+				DAFECA48A650568F0343A1EC70F9ADA8 /* RSECommerceCouponBuilder.m in Sources */,
+				96334E3F11EB6F747A6C6ED5D331271B /* RSECommerceEvents.m in Sources */,
+				5F5BFDEB062D99F3C1759FE2C24B5256 /* RSECommerceFilter.m in Sources */,
+				06D6F74B8BF4051B4BBBD387BC6E6C87 /* RSECommerceFilterBuilder.m in Sources */,
+				D06E58C6184D44D40A647624D1731CC8 /* RSECommerceOrder.m in Sources */,
+				EAF01C6BC2AA40D6EF3F189D1FBD0793 /* RSECommerceOrderBuilder.m in Sources */,
+				FE57167DBFBEEB70F04D0036585BB2C2 /* RSECommerceParamNames.m in Sources */,
+				E07FA1A4456692A31E08BA5EF1EB7A50 /* RSECommerceProduct.m in Sources */,
+				84C047E493725982A833D34D1C576F19 /* RSECommerceProductBuilder.m in Sources */,
+				1E3D48C7FAB5B4F63387D0D16B96F539 /* RSECommercePromotion.m in Sources */,
+				C0DA803783CD504A4D9BE8AAC2B99D49 /* RSECommercePromotionBuilder.m in Sources */,
+				591282B7BEF4AD57662DF3480F82E778 /* RSECommerceSort.m in Sources */,
+				B04BE1045541DE9C65DD38DE87B2148B /* RSECommerceSortBuilder.m in Sources */,
+				89F5DA511B39FA37E04AC54FB8251354 /* RSECommerceWishList.m in Sources */,
+				850C83C772B724E60DBD1BBC44CE5515 /* RSECommerceWishListBuilder.m in Sources */,
+				42B81304A5178BE499939FA7D9DB684E /* RSElementCache.m in Sources */,
+				35E35E04FC587319896D1311EE9A0B18 /* RSEventRepository.m in Sources */,
+				C885ED0422AFCA1E4C7CCFBC227F5328 /* RSLibraryInfo.m in Sources */,
+				A0CCB350FE9F24B8A4C2C9707C22CF9B /* RSLogger.m in Sources */,
+				CEF80ACD2DAEE87419B92DDF1E519C20 /* RSMessage.m in Sources */,
+				E63887D7EACE67EC6BB9AE3286EC7902 /* RSMessageBuilder.m in Sources */,
+				76ABC6F3B7E580057D63501F351895A8 /* RSMessageType.m in Sources */,
+				267792467F873F6BCC1E334C0F190280 /* RSNetwork.m in Sources */,
+				1656BE704598DDFA97A243025B1BF01B /* RSOption.m in Sources */,
+				32E479FC6B1BFADE16112076C5779FE8 /* RSOrderCancelledEvent.m in Sources */,
+				61F0E493FEB1473F88D8FF7E6DF06851 /* RSOrderCompletedEvent.m in Sources */,
+				992A11C1A1F24AEF01A790FE183A6A41 /* RSOrderRefundedEvent.m in Sources */,
+				BC3DB4DCA819B123187232410EDBDC2C /* RSOrderUpdatedEvent.m in Sources */,
+				F0D4E0396C432237794CB450C78FBF90 /* RSOSInfo.m in Sources */,
+				5EA0921A10AFF067D72C3C236B4EB8F3 /* RSPagePropertyBuilder.m in Sources */,
+				9D95661E0D60AFCC2DA35C69E6E3538D /* RSPaymentInfoEnteredEvent.m in Sources */,
+				20E69207E3F24A943B7C66EB8E3822DC /* RSPreferenceManager.m in Sources */,
+				88C7BD6858E93904AAB44EF40AB1B993 /* RSProductAddedToCartEvent.m in Sources */,
+				D02164384384C84B3BD17B8250F6B472 /* RSProductAddedToWishListEvent.m in Sources */,
+				6062022571DAEC908B9C7D4B0526B69B /* RSProductClickedEvent.m in Sources */,
+				35742BCB125D5DABAF07D0F45666AB1D /* RSProductListFilteredEvent.m in Sources */,
+				117B2BA7F89BB930F4D22FBCDE7C3E6E /* RSProductListViewedEvent.m in Sources */,
+				8BAA49ACE32C79ECDD1AE09A15042E0D /* RSProductRemovedEvent.m in Sources */,
+				5AED244C7AEED3DBF4CF2F95F3B86DEE /* RSProductRemovedFromWishListEvent.m in Sources */,
+				6615D02D8ED1F6D041B79494F26E5229 /* RSProductReviewedEvent.m in Sources */,
+				983CB3E8BEBAE228CA91480F7B3B949D /* RSProductSearchedEvent.m in Sources */,
+				58BEC481C57C2EFC098F210837F8A386 /* RSProductSharedEvent.m in Sources */,
+				19F7D3DB7754BCB31DE872B283B932D6 /* RSProductViewedEvent.m in Sources */,
+				EE62C9CB095BEE3356529431E715F044 /* RSPromotionClickedEvent.m in Sources */,
+				4378EE298B4EFB154BA867CD01692409 /* RSPromotionViewedEvent.m in Sources */,
+				4B7AB1CBBBC61ABFFC0AED7095420758 /* RSProperty.m in Sources */,
+				797BE92C791A0FA4C1ECFA3156906009 /* RSScreenInfo.m in Sources */,
+				85C93DD5838B759E87645D1E02B6AE98 /* RSScreenPropertyBuilder.m in Sources */,
+				C947364C48AF64D577C6ADCDB5D4C4C7 /* RSServerConfigManager.m in Sources */,
+				E1C4364036B3B1D4C5054E1985B08237 /* RSServerConfigSource.m in Sources */,
+				20D6EBD2C791E76B8B8B678B385A26B7 /* RSServerDestination.m in Sources */,
+				2F2151B83D76B12A102615BD6C779C74 /* RSServerDestinationDefinition.m in Sources */,
+				3BE07D516975C754C2AED0AD4F1A1D8C /* RSTrackPropertyBuilder.m in Sources */,
+				3D2B847D09795514C0F825D6A392F483 /* RSTraits.m in Sources */,
+				2FFE2078941854DB8C8AB442579B7E24 /* RSTraitsBuilder.m in Sources */,
+				4127220697E396E7E602A3DC431E4495 /* RSUtils.m in Sources */,
+				0020967FBD2720EDD3F7DE3EA1E1A3E8 /* RSWishListProductAddedToCartEvent.m in Sources */,
+				191B01080304A1DCB03B3BB69FE34B38 /* Rudder-dummy.m in Sources */,
+				4597B5F55C8ACAA3DDA2DD4DA5ABCFEF /* UIViewController+RSScreen.m in Sources */,
+				6277E3A545417D13A4D25E06597C5B97 /* WKInterfaceController+RSScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE66227A150C1EFF07AAA4766BF24933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD94D74479526B324FC3E5F7FDEDC69 /* Pods-Stream Test (iOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD23143BCF62CBE55A4989047DEF9AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA12CAE5C69D13362641A2D2CBF13FB /* Pods-Stream Test (macOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DF8E659CBC9DE24965688826D79CE1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Stream-Test";
+			target = CBAD76862C435D904F1FBB73C43EF7E2 /* Pods-Stream-Test */;
+			targetProxy = 7544DFF48DA61A9D5E45954383069BA1 /* PBXContainerItemProxy */;
+		};
+		1A09590DAC6843933190062E9E433EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rudder;
+			target = F5C6323F415EBC1C6BAD0C1E271A0C4D /* Rudder */;
+			targetProxy = 134EB4A10E70D21E1320D9D39B91047F /* PBXContainerItemProxy */;
+		};
+		B34F24D01C86F57060032C055318D87A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rudder;
+			target = F5C6323F415EBC1C6BAD0C1E271A0C4D /* Rudder */;
+			targetProxy = 8A3607CD9897A180947738E50F307BB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1360987BE593152F75CF79026CBFE88A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB090FEF855DFA48B993DBBF41379DC2 /* Pods-Stream-Test.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream-Test/Pods-Stream-Test-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream-Test/Pods-Stream-Test.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BF2A72872B049C058B9047BD8C42002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+			};
+			name = Release;
+		};
+		3DC2A4DD1B1959E575001B6D741C4413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D51AA0A5E04A949C06F0CE58A892D6 /* Rudder.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder/Rudder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder/Rudder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Rudder/Rudder.modulemap";
+				PRODUCT_MODULE_NAME = Rudder;
+				PRODUCT_NAME = Rudder;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5938B781EE1D759B35F1A6370AEABD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+			};
+			name = Debug;
+		};
+		8159B2BAE439CD2FE9C83233C5B00493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E6AE13688FC0398705C7DD0FBBF5B7 /* Pods-Stream Test (macOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream Test (macOS)/Pods-Stream Test (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream Test (macOS)/Pods-Stream Test (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82B7B7D19027052CE7F564D12998A41C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DA4544D39C600E4791DF28B063DC0B /* Pods-Stream-Test-Stream-TestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream-Test-Stream-TestUITests/Pods-Stream-Test-Stream-TestUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream-Test-Stream-TestUITests/Pods-Stream-Test-Stream-TestUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F698E05E2B8359DADD7AF96292ACDC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7F987D0AB00F5381402F28B87DACD1 /* Pods-Stream Test (iOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream Test (iOS)/Pods-Stream Test (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream Test (iOS)/Pods-Stream Test (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F755CB69E63B5E30792640E6DE72E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3976F5F80A330D8FEB218B42E2889F8 /* Pods-Stream-Test.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream-Test/Pods-Stream-Test-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream-Test/Pods-Stream-Test.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1B6FE0E3053F64466F278C4D4982D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22177C9E06F17F6A3DF1CAC5DFA0EDDD /* Pods-Stream-TestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream-TestTests/Pods-Stream-TestTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream-TestTests/Pods-Stream-TestTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D399F6107CA55849FCC30D7034A15233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E07D735A5773974A1D2F58F4B51617F /* Pods-Stream-Test-Stream-TestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream-Test-Stream-TestUITests/Pods-Stream-Test-Stream-TestUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream-Test-Stream-TestUITests/Pods-Stream-Test-Stream-TestUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBE2994D82EECDB44FAE4B8FB6FBE5C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D4E735A8B5DEBA00A8B9E283CB8C1F /* Rudder.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rudder/Rudder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rudder/Rudder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Rudder/Rudder.modulemap";
+				PRODUCT_MODULE_NAME = Rudder;
+				PRODUCT_NAME = Rudder;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB0FA004218D859CE4B4E4DB7EEC248C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F001871F33373B85BF586DC9BE0C41 /* Pods-Stream Test (iOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream Test (iOS)/Pods-Stream Test (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream Test (iOS)/Pods-Stream Test (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDE87DE8F58D7709A2732ADA7B3FE9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267998BCA54C07D426604C5D95E8EE2C /* Pods-Stream Test (macOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream Test (macOS)/Pods-Stream Test (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream Test (macOS)/Pods-Stream Test (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FBB26F2B16E728F7A7C7BF92E28C3569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9412D8776CB45A339D3378CD2FD6C3 /* Pods-Stream-TestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Stream-TestTests/Pods-Stream-TestTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Stream-TestTests/Pods-Stream-TestTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.7;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E7C5FB01822027195555E4F0F1AB2CC /* Build configuration list for PBXNativeTarget "Rudder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE2994D82EECDB44FAE4B8FB6FBE5C3 /* Debug */,
+				3DC2A4DD1B1959E575001B6D741C4413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2712B05861C3AC58A7C5AADA53FC0F1D /* Build configuration list for PBXNativeTarget "Pods-Stream-TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B6FE0E3053F64466F278C4D4982D32 /* Debug */,
+				FBB26F2B16E728F7A7C7BF92E28C3569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33E3156551B0460E7F7171CBFA62EDC8 /* Build configuration list for PBXNativeTarget "Pods-Stream Test (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F698E05E2B8359DADD7AF96292ACDC6 /* Debug */,
+				EB0FA004218D859CE4B4E4DB7EEC248C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5938B781EE1D759B35F1A6370AEABD5A /* Debug */,
+				3BF2A72872B049C058B9047BD8C42002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		593CDCB44EC94309D5008263BC5EAE04 /* Build configuration list for PBXNativeTarget "Pods-Stream Test (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8159B2BAE439CD2FE9C83233C5B00493 /* Debug */,
+				EDE87DE8F58D7709A2732ADA7B3FE9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C0D9080DAA94A0FFABDD9C39A23BE5 /* Build configuration list for PBXNativeTarget "Pods-Stream-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1360987BE593152F75CF79026CBFE88A /* Debug */,
+				9F755CB69E63B5E30792640E6DE72E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7F5461DCB3603BECC6817D8E2E3901 /* Build configuration list for PBXNativeTarget "Pods-Stream-Test-Stream-TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B7B7D19027052CE7F564D12998A41C /* Debug */,
+				D399F6107CA55849FCC30D7034A15233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,33 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+default_platform(:tvos)
+
+before_all do
+  # Install with `fastlane add_plugin semaphore`
+  setup_semaphore
+end
+
+platform :tvos do
+  lane :build do
+    match(type: 'adhoc')
+    gym(scheme: 'Stream-Test', clean: true)
+  end
+
+  lane :test do
+    run_tests(scheme: 'Stream-Test', devices: ['Apple TV'], prelaunch_simulator: true)
+  end
+
+  lane :screenshots do
+    snapshot
+  end
+end
