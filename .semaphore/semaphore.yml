@@ -15,6 +15,7 @@ blocks:
           - checkout
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
+          - cp /Users/semaphore/Config.swift Shared/
       jobs:
         - name: Test
           commands:
