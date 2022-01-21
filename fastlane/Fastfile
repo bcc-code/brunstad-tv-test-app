@@ -20,11 +20,11 @@ end
 platform :tvos do
   lane :build do
     match(type: 'adhoc')
-    gym(scheme: 'Stream-TestTests', clean: true)
+    gym(scheme: 'Stream-Test', clean: true)
   end
 
   lane :test do
-    run_tests(scheme: 'Stream-TestTests', devices: ['Apple TV 4k'], prelaunch_simulator: true)
+    run_tests(scheme: 'Stream-Test', devices: ['Apple TV'], prelaunch_simulator: true)
   end
 
   lane :screenshots do

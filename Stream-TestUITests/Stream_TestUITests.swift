@@ -51,12 +51,4 @@ class Stream_TestUITests: XCTestCase {
         waitText(app: app, id: "SubLanguage", message: "Polish", t: 60)
         waitText(app: app, id: "AudioLanguage", message: "German", t: 60)
     }
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
 }

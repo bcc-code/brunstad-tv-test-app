@@ -13,28 +13,28 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
-## iOS
+## tvos
 
-### ios build
+### tvos build
 
 ```sh
-[bundle exec] fastlane ios build
+[bundle exec] fastlane tvos build
 ```
 
 
 
-### ios test
+### tvos test
 
 ```sh
-[bundle exec] fastlane ios test
+[bundle exec] fastlane tvos test
 ```
 
 
 
-### ios screenshots
+### tvos screenshots
 
 ```sh
-[bundle exec] fastlane ios screenshots
+[bundle exec] fastlane tvos screenshots
 ```
 
 
