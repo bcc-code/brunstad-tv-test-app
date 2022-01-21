@@ -1,0 +1,37 @@
+apiVersion: v1alpha
+kind: xcuitest
+sauce:
+  region: eu-central-1 
+  concurrency: 1
+  metadata:
+    tags:
+      - e2e
+      - release team
+      - other tag
+    build: Release $CI_COMMIT_SHORT_SHA
+
+xcuitest:
+  app: ./../Stream.ipa
+  testApp: ./../Stream.app
+
+suites:
+  - name: "saucy xcuitest"
+    devices:
+      # If set, only device by ID will be queried.
+      #- id: <rdc_device_id>
+      - name: "iPhone.*"
+        platformVersion: "15.0"
+        options:
+          # If set, only devices with a SIM card will be queried.
+          # carrierConnectivity: false
+          # Possible values [ANY,PHONE,TABLET]
+          deviceType: PHONE
+          # If set, only private devices will be queried.
+          private: false
+
+artifacts:
+  download:
+    when: always
+    match:
+      - "*.junit.xml"
+    directory: ./artifacts/

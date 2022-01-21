@@ -12,11 +12,29 @@ import AVFoundation
 import NotificationCenter
 #endif
 import Foundation
+import Rudder
+import CoreMedia
+
+extension CMTime {
+    var durationText:String {
+        let totalSeconds = Int(CMTimeGetSeconds(self))
+        let hours:Int = Int(totalSeconds / 3600)
+        let minutes:Int = Int(totalSeconds % 3600 / 60)
+        let seconds:Int = Int((totalSeconds % 3600) % 60)
+
+        if hours > 0 {
+            return String(format: "%i:%02i:%02i", hours, minutes, seconds)
+        } else {
+            return String(format: "%02i:%02i", minutes, seconds)
+        }
+    }
+}
 
 struct Player: View {
     init() {
-
+        player.currentItem?.preferredPeakBitRate = 10000000
     }
+    
     var token : String = ""
 
     var player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/visdeos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8")!)
@@ -73,6 +91,9 @@ struct Player: View {
     @State var watched = ""
     @State var subsLang = ""
     @State var audioLang = ""
+    @State var mbps = -1.0
+    @State var size = ""
+    @State var fps = ""
     
     func playerStatusCallback(p: AVPlayer, s: NSKeyValueObservedChange<AVPlayer.Status>) {
         switch player.status {
@@ -98,6 +119,8 @@ struct Player: View {
     }
     
     func periodic(t: CMTime) {
+        let rs = RSClient.sharedInstance()
+        
         let asset = player.currentItem!.asset
         for ch in asset.availableMediaCharacteristicsWithMediaSelectionOptions {
            
@@ -128,6 +151,7 @@ struct Player: View {
             self.player.currentItem?.accessLog()?.events.forEach({ l in
                 //print(l.averageAudioBitrate, l.averageVideoBitrate, l.downloadOverdue, l.durationWatched, l.transferDuration)
                 averageBW = String(format: "%.2f Mbps",  l.averageVideoBitrate/1024/1024)
+                mbps = l.averageVideoBitrate/1024/1024
                 watched = String(format: "%.0fs",  l.durationWatched)
             })
         
@@ -151,8 +175,28 @@ struct Player: View {
         player.currentItem!.tracks.forEach { t in
             if t.assetTrack?.mediaType == .video {
                 videoSize = String(format: "%.0fx%.0f@%.0f", t.assetTrack!.naturalSize.width, t.assetTrack!.naturalSize.height, t.currentVideoFrameRate)
+                size = String(format: "%.0fx%.0f", t.assetTrack!.naturalSize.width, t.assetTrack!.naturalSize.height)
+                fps = String(format: "%.0f", t.currentVideoFrameRate)
             }
         }
+        
+        rs?.track("playing", properties:[
+            "averageBW": averageBW,
+            "timeControl": timeControl,
+            "reasonForWaitingToPlay": reasonForWaitingToPlay,
+            "itemStatus": itemStatus,
+            "playerStatus": playerStatus,
+            "error": error,
+            "videoSize": videoSize,
+            "size": size,
+            "fps": fps,
+            "watched": watched,
+            "subsLang": subsLang,
+            "audioLang": audioLang,
+            "time": t.durationText,
+            "timeSeconds": t.seconds,
+            "mbps": mbps,
+        ])
     }
     
     func showErrorLog(n : Notification) {
